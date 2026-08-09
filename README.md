@@ -18,6 +18,9 @@ cd /home/ubuntu/HOTFIXR && pip install -e .
 
 NOTE: This is a bit of an unclean implementation, whenever a path or filename is required, please provide the full path of where to store that path/file.
 
+# Datasets
+We've upload all the data on SharePoint ([Data Zip](https://uniphore-my.sharepoint.com/:u:/p/ishika_agarwal/IQA6a2HzoGC4SI6Wi1kyEwaZAQpyvAU50E5jrr3-5WZTRSQ?e=zPvUBo)) contains all of the training/testing data we used for our results. You are more then welcome to use those. We've also provided the code for processing the datasets for VERL/GRPO in `data/preprocess_nemotron.py`.
+
 # Push notifications when your experiment is finished
 GRPO experiments can take a long time! Instead of waiting to find out when it is finished, you can send push notifications to your phone. Download the ntfy app ([https://ntfy.sh/](https://ntfy.sh/)), and add this to your `.bashrc` file (make sure to input your own unique code):
 

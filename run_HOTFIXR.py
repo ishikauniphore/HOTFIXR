@@ -1,10 +1,13 @@
 import HOTFIXR
+import os
+
+REPO_ROOT = "/home/ubuntu/"
 
 HOTFIXR.set_variables({
     "CUSTOM_PROMPT": "Answer the following question. Output your reasoning in <reasoning> </reasoning> tags, and your final answer in <answer> \\boxed{} </answer> tags.\n\n<question> {q} </question>.",
-    "SAVE_RESULTS_DIRECTORY": "result_files/",
     "HF_USERNAME": "ishikauniphore",
-    "REPO_ROOT": "/home/ubuntu/"
+    "REPO_ROOT": REPO_ROOT,
+    "SAVE_RESULTS_DIRECTORY": os.path.join(REPO_ROOT, "result_files/"),
 })
 
 generator_model = HOTFIXR.train_generator(dataset_path="/home/ubuntu/HOTFIXR/data/nemotron", model="Qwen/Qwen2.5-7B-Instruct", job_name="generator_nemotron_qwen7bins_iter0")
