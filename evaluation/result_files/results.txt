@@ -1,0 +1,96 @@
+student_nemotron_qwen7bins_iter0_nemotron_stem	embed_sim=47.6000	rouge_l=47.6000	judge=57.4000
+student_nemotron_qwen7bins_iter0_nemotron_math	embed_sim=20.6000	rouge_l=17.6000	judge=7.8000
+student_nemotron_qwen7bins_iter0_nemotron_chat	embed_sim=55.4000	rouge_l=4.2000	judge=88.4000
+student_nemotron_qwen7bins_iter0_opus_Arabic	embed_sim=38.8000	rouge_l=20.6000	judge=44.0000
+student_nemotron_qwen7bins_iter0_opus_French	embed_sim=44.0000	rouge_l=30.8000	judge=70.6000
+student_nemotron_qwen7bins_iter0_opus_German	embed_sim=47.6000	rouge_l=31.0000	judge=54.8000
+student_nemotron_qwen7bins_iter0_opus_Italian	embed_sim=46.2000	rouge_l=28.8000	judge=60.8000
+student_nemotron_qwen7bins_iter0_opus_Japanese	embed_sim=31.8000	rouge_l=9.8000	judge=34.0000
+student_nemotron_qwen7bins_iter0_opus_Portuguese	embed_sim=47.6000	rouge_l=31.2000	judge=66.6000
+student_nemotron_qwen7bins_iter0_opus_Spanish	embed_sim=41.8000	rouge_l=28.6000	judge=70.0000
+student_nemotron_qwen7bins_iter0_mmmlu_AR_XY	embed_sim=41.2000	rouge_l=41.4000	judge=52.8000
+student_nemotron_qwen7bins_iter0_mmmlu_DE_DE	embed_sim=53.0000	rouge_l=53.2000	judge=61.0000
+student_nemotron_qwen7bins_iter0_mmmlu_ES_LA	embed_sim=51.8000	rouge_l=51.8000	judge=64.0000
+student_nemotron_qwen7bins_iter0_mmmlu_FR_FR	embed_sim=55.2000	rouge_l=55.6000	judge=66.4000
+student_nemotron_qwen7bins_iter0_mmmlu_IT_IT	embed_sim=60.6000	rouge_l=60.8000	judge=66.0000
+student_nemotron_qwen7bins_iter0_mmmlu_JA_JP	embed_sim=51.8000	rouge_l=52.2000	judge=59.4000
+student_nemotron_qwen7bins_iter0_mmmlu_PT_BR	embed_sim=57.4000	rouge_l=57.4000	judge=66.8000
+student_nemotron_qwen7bins_iter0_mhotpot_ar	embed_sim=70.4000	rouge_l=3.8000	judge=37.0000
+student_nemotron_qwen7bins_iter0_mhotpot_en	embed_sim=86.0000	rouge_l=73.0000	judge=75.8000
+student_nemotron_qwen7bins_iter0_mhotpot_ru	embed_sim=76.4000	rouge_l=10.6000	judge=58.0000
+student_nemotron_qwen7bins_iter0_mhotpot_zh	embed_sim=70.0000	rouge_l=8.8000	judge=47.2000
+
+
+
+student_nemotron_qwen7bins_iter0_nemotron_stem	embed_sim=45.8000	rouge_l=46.2000	judge=55.2000
+student_nemotron_qwen7bins_iter0_nemotron_math	embed_sim=19.0000	rouge_l=16.0000	judge=6.8000
+student_nemotron_qwen7bins_iter0_nemotron_chat	embed_sim=55.0000	rouge_l=3.6000	judge=86.6000
+student_nemotron_qwen7bins_iter0_opus_Arabic	embed_sim=41.0000	rouge_l=24.4000	judge=43.2000
+student_nemotron_qwen7bins_iter0_opus_French	embed_sim=46.6000	rouge_l=32.2000	judge=72.2000
+student_nemotron_qwen7bins_iter0_opus_German	embed_sim=51.6000	rouge_l=32.0000	judge=53.6000
+student_nemotron_qwen7bins_iter0_opus_Italian	embed_sim=44.0000	rouge_l=25.2000	judge=61.0000
+student_nemotron_qwen7bins_iter0_opus_Japanese	embed_sim=27.6000	rouge_l=8.8000	judge=35.0000
+student_nemotron_qwen7bins_iter0_opus_Portuguese	embed_sim=47.8000	rouge_l=31.2000	judge=65.2000
+student_nemotron_qwen7bins_iter0_opus_Spanish	embed_sim=39.0000	rouge_l=27.0000	judge=71.6000
+student_nemotron_qwen7bins_iter0_mmmlu_AR_XY	embed_sim=39.8000	rouge_l=41.0000	judge=54.0000
+student_nemotron_qwen7bins_iter0_mmmlu_DE_DE	embed_sim=53.0000	rouge_l=53.6000	judge=60.4000
+student_nemotron_qwen7bins_iter0_mmmlu_ES_LA	embed_sim=52.4000	rouge_l=52.6000	judge=62.2000
+student_nemotron_qwen7bins_iter0_mmmlu_FR_FR	embed_sim=56.8000	rouge_l=56.8000	judge=67.0000
+student_nemotron_qwen7bins_iter0_mmmlu_IT_IT	embed_sim=58.4000	rouge_l=58.6000	judge=66.0000
+student_nemotron_qwen7bins_iter0_mmmlu_JA_JP	embed_sim=49.8000	rouge_l=50.2000	judge=58.0000
+student_nemotron_qwen7bins_iter0_mmmlu_PT_BR	embed_sim=56.6000	rouge_l=56.6000	judge=65.4000
+student_nemotron_qwen7bins_iter0_mhotpot_ar	embed_sim=72.6000	rouge_l=4.2000	judge=38.2000
+student_nemotron_qwen7bins_iter0_mhotpot_en	embed_sim=84.8000	rouge_l=71.8000	judge=75.0000
+student_nemotron_qwen7bins_iter0_mhotpot_ru	embed_sim=74.4000	rouge_l=10.6000	judge=56.8000
+student_nemotron_qwen7bins_iter0_mhotpot_zh	embed_sim=69.2000	rouge_l=8.2000	judge=47.0000
+
+
+
+student_generator_Qwen2_nemotron_stem	embed_sim=56.8000	rouge_l=56.8000	judge=61.6000
+student_generator_Qwen2_nemotron_math	embed_sim=35.6000	rouge_l=16.6000	judge=10.6000
+student_generator_Qwen2_nemotron_chat	embed_sim=51.6000	rouge_l=4.0000	judge=87.8000
+student_generator_Qwen2_opus_Arabic	embed_sim=56.8000	rouge_l=36.8000	judge=49.2000
+student_generator_Qwen2_opus_French	embed_sim=54.8000	rouge_l=34.8000	judge=70.6000
+student_generator_Qwen2_opus_German	embed_sim=47.4000	rouge_l=25.4000	judge=53.4000
+student_generator_Qwen2_opus_Italian	embed_sim=56.2000	rouge_l=36.6000	judge=61.6000
+student_generator_Qwen2_opus_Japanese	embed_sim=46.2000	rouge_l=17.6000	judge=39.8000
+student_generator_Qwen2_opus_Portuguese	embed_sim=57.0000	rouge_l=38.4000	judge=66.8000
+student_generator_Qwen2_opus_Spanish	embed_sim=60.0000	rouge_l=44.0000	judge=70.2000
+student_generator_Qwen2_mmmlu_AR_XY	embed_sim=59.6000	rouge_l=60.0000	judge=62.8000
+student_generator_Qwen2_mmmlu_DE_DE	embed_sim=62.2000	rouge_l=62.2000	judge=69.0000
+student_generator_Qwen2_mmmlu_ES_LA	embed_sim=65.4000	rouge_l=65.4000	judge=71.8000
+student_generator_Qwen2_mmmlu_FR_FR	embed_sim=67.8000	rouge_l=67.8000	judge=73.2000
+student_generator_Qwen2_mmmlu_IT_IT	embed_sim=63.6000	rouge_l=63.6000	judge=68.8000
+student_generator_Qwen2_mmmlu_JA_JP	embed_sim=66.0000	rouge_l=66.0000	judge=69.8000
+student_generator_Qwen2_mmmlu_PT_BR	embed_sim=71.0000	rouge_l=71.2000	judge=76.2000
+student_generator_Qwen2_mhotpot_ar	embed_sim=70.8000	rouge_l=3.8000	judge=36.0000
+student_generator_Qwen2_mhotpot_en	embed_sim=83.2000	rouge_l=70.0000	judge=76.6000
+student_generator_Qwen2_mhotpot_ru	embed_sim=77.6000	rouge_l=10.8000	judge=58.8000
+student_generator_Qwen2_mhotpot_zh	embed_sim=55.4000	rouge_l=6.2000	judge=42.6000
+
+
+
+student_nemotron_qwen7bins_iter0_nemotron_stem	embed_sim=47.6000	rouge_l=47.6000	judge=57.0000
+student_nemotron_qwen7bins_iter0_nemotron_math	embed_sim=20.8000	rouge_l=15.4000	judge=7.6000
+student_nemotron_qwen7bins_iter0_nemotron_chat	embed_sim=53.0000	rouge_l=3.2000	judge=86.8000
+student_nemotron_qwen7bins_iter0_opus_Arabic	embed_sim=43.0000	rouge_l=23.8000	judge=43.4000
+student_nemotron_qwen7bins_iter0_opus_French	embed_sim=46.2000	rouge_l=32.2000	judge=71.6000
+student_nemotron_qwen7bins_iter0_opus_German	embed_sim=49.0000	rouge_l=31.4000	judge=55.0000
+student_nemotron_qwen7bins_iter0_opus_Italian	embed_sim=46.8000	rouge_l=28.8000	judge=61.2000
+student_nemotron_qwen7bins_iter0_opus_Japanese	embed_sim=27.4000	rouge_l=10.8000	judge=34.8000
+student_nemotron_qwen7bins_iter0_opus_Portuguese	embed_sim=44.8000	rouge_l=30.0000	judge=64.8000
+student_nemotron_qwen7bins_iter0_opus_Spanish	embed_sim=39.0000	rouge_l=27.4000	judge=68.8000
+student_nemotron_qwen7bins_iter0_mmmlu_AR_XY	embed_sim=38.8000	rouge_l=40.2000	judge=50.8000
+student_nemotron_qwen7bins_iter0_mmmlu_DE_DE	embed_sim=52.6000	rouge_l=53.2000	judge=60.6000
+student_nemotron_qwen7bins_iter0_mmmlu_ES_LA	embed_sim=49.2000	rouge_l=49.6000	judge=63.0000
+student_nemotron_qwen7bins_iter0_mmmlu_FR_FR	embed_sim=57.2000	rouge_l=57.2000	judge=66.6000
+student_nemotron_qwen7bins_iter0_mmmlu_IT_IT	embed_sim=56.8000	rouge_l=56.8000	judge=63.8000
+student_nemotron_qwen7bins_iter0_mmmlu_JA_JP	embed_sim=53.0000	rouge_l=53.4000	judge=60.6000
+student_nemotron_qwen7bins_iter0_mmmlu_PT_BR	embed_sim=59.2000	rouge_l=59.2000	judge=66.4000
+student_nemotron_qwen7bins_iter0_mhotpot_ar	embed_sim=71.6000	rouge_l=4.2000	judge=36.6000
+student_nemotron_qwen7bins_iter0_mhotpot_en	embed_sim=83.6000	rouge_l=73.4000	judge=75.8000
+student_nemotron_qwen7bins_iter0_mhotpot_ru	embed_sim=73.4000	rouge_l=10.6000	judge=57.0000
+student_nemotron_qwen7bins_iter0_mhotpot_zh	embed_sim=69.6000	rouge_l=8.8000	judge=46.2000
+
+
+

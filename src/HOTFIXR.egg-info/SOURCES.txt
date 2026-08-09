@@ -1,0 +1,11 @@
+pyproject.toml
+src/HOTFIXR/__init__.py
+src/HOTFIXR/_proc.py
+src/HOTFIXR/_service.py
+src/HOTFIXR/config.py
+src/HOTFIXR/pipeline.py
+src/HOTFIXR.egg-info/PKG-INFO
+src/HOTFIXR.egg-info/SOURCES.txt
+src/HOTFIXR.egg-info/dependency_links.txt
+src/HOTFIXR.egg-info/requires.txt
+src/HOTFIXR.egg-info/top_level.txt

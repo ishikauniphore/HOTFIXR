@@ -1,0 +1,501 @@
+|question|predictions|references|embed_sim|embed_sim_accuracy|rouge_l|rouge_l_accuracy|judge_score|judge_score_accuracy
+0|"Translate the following from Japanese to English: ""落ち着く〜！"""|</|I feel so at home!|0.5996534|0.0|0.0|0.0|1.0|0.0
+1|"Translate the following from Japanese to English: ""行使に数週間かかる 複製作業も"""||Probably takes Cohen a few weeks to rule... and then there's a redaction process.|0.3559482|0.0|0.0|0.0|1.0|0.0
+2|"Translate the following from Japanese to English: ""じゃ、ハット、 刑務所にいても、あまり影響なかったみたい"""||Well, Hutt, it doesn't look like prison had to adverse an effect on you.|0.3647798|0.0|0.0|0.0|2.0|0.0
+3|"Translate the following from Japanese to English: ""まっ 頑張ってましたね （山里）頑張ってるってことが"""|"""I see, you've been working hard, (Yamazaki) and"|-They work hard.|0.64285904|0.0|0.3333333333333333|0.0|3.0|0.0
+4|"Translate the following from Japanese to English: ""艦隊のクルーは戦闘で テストされることはなくなる"""||No crew in Starfleet has been tested more in battle.|0.37563014|0.0|0.0|0.0|3.0|0.0
+5|"Translate the following from Japanese to English: ""嫌いな国だね 馬を見かけないし"""|"""It's a country you don't like, right? I haven't seen any horses."" </"|Well, I think we should win. I hate Vietnam.|0.50745374|0.0|0.08333333333333334|0.0|1.0|0.0
+6|"Translate the following from Japanese to English: ""さあ ニッキ 謙遜するな"""|"""Alright, Nikki, don't be modest"" </answer"|Come on, Nicky, don't be modest.|0.7920886|1.0|0.5714285714285714|1.0|4.0|1.0
+7|"Translate the following from Japanese to English: ""私もよ"""|"""Me too"" </"|- Pleased to meet you. - It's nice to meet you.|0.5253415|0.0|0.0|0.0|3.0|0.0
+8|"Translate the following from Japanese to English: ""私たちの一族では、 十二の名前が使用される。"""|In our clan,|In our clan, 12 names are used in.|0.68446374|0.0|0.5454545454545454|1.0|2.0|0.0
+9|"Translate the following from Japanese to English: ""レスター　いま谷に降りている"""|Leicester is|Galt is dead.|0.41891742|0.0|0.4|0.0|1.0|0.0
+10|"Translate the following from Japanese to English: ""多分の為に支払ってるんじゃないわ フレディ"""|"""I'm not paying for probably, Freddie."""|"We don't pay you for ""maybe"", Freddie."|0.8012811|1.0|0.39999999999999997|0.0|4.0|1.0
+11|"Translate the following from Japanese to English: ""この封筒は誰が？"""||Do you know how this envelope got here?|0.47407293|0.0|0.0|0.0|5.0|1.0
+12|"Translate the following from Japanese to English: ""忘れてたのよ"""|"""I forgot."" </answer"|I forgot about it. He...|0.79332435|1.0|0.5|0.0|3.0|0.0
+13|"Translate the following from Japanese to English: ""あなたはローマの援軍を反対した 大公ノタラス"""||You were against the Latin support, Grand Duke Notaras.|0.35720783|0.0|0.0|0.0|4.0|1.0
+14|"Translate the following from Japanese to English: ""世界中の笑いものだ だがやめんぞ"""|"""It's a laughingstock around the world, but I'll stop it."""|The world's laughing! - Right. But we're not dead.|0.60984373|0.0|0.2727272727272727|0.0|2.0|0.0
+15|"Translate the following from Japanese to English: ""イスはそのままにしておきなさい。"""|"""Don't change it"|Leave the chairs as they are.|0.68224233|0.0|0.0|0.0|3.0|0.0
+16|"Translate the following from Japanese to English: ""リアクター崩壊まで47分だ"""||We have 47 minutes until our reactor breaches.|0.44490978|0.0|0.0|0.0|5.0|1.0
+17|"Translate the following from Japanese to English: ""古めかしい感じだ"""|It has an old|The office does appear archaic.|0.711461|1.0|0.0|0.0|1.0|0.0
+18|"Translate the following from Japanese to English: ""尻を蹴飛ばしてやる"""|"""Kick your buttocks"""|I'm going to kick your ass.|0.82467186|1.0|0.4|0.0|5.0|1.0
+19|"Translate the following from Japanese to English: ""例 3コールバック関数として匿名関数を使用"""||2.3445, M_PI some trig: -1.6291725057799 a hypotenuse:|0.42018318|0.0|0.0|0.0|1.0|0.0
+20|"Translate the following from Japanese to English: ""子供は作れない 同じ遺伝子を伝えたくない"""|"""I can't have children and don't want to pass on the same genes."""|I'm not gonna have a child... with the same genetic disorder as me who's gonna die.|0.7999067|1.0|0.2424242424242424|0.0|4.0|1.0
+21|"Translate the following from Japanese to English: ""その香りが欲しいんだ"""|"""I want that smell"|Michelle, I want it back.|0.6263735|0.0|0.4444444444444445|0.0|1.0|0.0
+22|"Translate the following from Japanese to English: ""よく聞くんだ アレックス"""||Listen closely, Alex.|0.5171361|0.0|0.0|0.0|5.0|1.0
+23|"Translate the following from Japanese to English: ""そういうのは苦手だ 変な回数を想像しちゃう"""|"""I'm not good with that kind of thing; I start imagining weird stuff."""|Well, I don't have that kind of imagination. I barely picture odd numbered things.|0.7582325|1.0|0.3448275862068965|0.0|1.0|0.0
+24|"Translate the following from Japanese to English: ""最初から決まってたのかも"""|It might have been|Maybe we were doomed from the beginning.|0.57630074|0.0|0.0|0.0|5.0|1.0
+25|"Translate the following from Japanese to English: ""信じてくれ 君には俺の助けが必要だ"""|"""Believe in me"|Trust me. Karly, you need my help|0.70902073|1.0|0.2|0.0|3.0|0.0
+26|"Translate the following from Japanese to English: ""光を照らしたら・・ 分かったよ"""|</|You know what would be helpful? A little light. Certainly.|0.5168362|0.0|0.0|0.0|1.0|0.0
+27|"Translate the following from Japanese to English: ""俺たちはお前をそこから出す しっかりつかめ ブラボー 分かったか 待機する"""|"""We will get you out of there, hold on tight, Bravo, did you understand, wait"|We'll get you out of there. Just hang tight, Bravo. OK, wait out.|0.9227446|1.0|0.6206896551724138|1.0|3.0|0.0
+28|"Translate the following from Japanese to English: ""誰を使ってもいい"""|"""Whoever you want to use"" </"|I don't care who you have to pull off shift.|0.6627841|0.0|0.25000000000000006|0.0|1.0|0.0
+29|"Translate the following from Japanese to English: ""そう信じてますけど..."""||Sure, Mr. DeCarlo.|0.4953867|0.0|0.0|0.0|1.0|0.0
+30|"Translate the following from Japanese to English: ""注意 トランザクションを使用している場合、コミットの後ではなくINSERT, UPDATE, DELETEクエリの後で fbsql_affected_rows() をコールする必要がありま す。"""|"""If you are using transactions, you must call fbsql_affected_rows() after INSERT, UPDATE, DELETE queries, not after a commit."""|If you are using transactions, you need to call fbsql_affected_rows() after your INSERT, UPDATE, or DELETE query, not after the commit.|0.9785977|1.0|0.8372093023255814|1.0|2.0|0.0
+31|"Translate the following from Japanese to English: """"私の事を忘れないで"""""||Just hold a good thought for me.|0.44579712|0.0|0.0|0.0|1.0|0.0
+32|"Translate the following from Japanese to English: ""げっぷさせる"""|"""To make someone"|- Oleaning.|0.29631856|0.0|0.0|0.0|1.0|0.0
+33|"Translate the following from Japanese to English: ""- いくぞ"""|"""- I'm off to [wherever I'm going to go to go to go to go to go to go to go to go to go to go to go to go to go to go to go to go to go to go to go to go to go to go to]"" </answer"|- Ready? - Yes, doctor.|0.4669385|0.0|0.0|0.0|1.0|0.0
+34|"Translate the following from Japanese to English: ""- ああ"""|"""Ah"|Yes.|0.71758914|1.0|0.0|0.0|1.0|0.0
+35|"Translate the following from Japanese to English: ""事務所がある"""|"""There is an office"|He's got an office--|0.8585587|1.0|0.4444444444444445|0.0|3.0|0.0
+36|"Translate the following from Japanese to English: ""（吉森） はい..."""||Yes.|0.5635263|0.0|0.0|0.0|1.0|0.0
+37|"Translate the following from Japanese to English: ""知ってる"""|""""|I know.|0.6695787|0.0|0.0|0.0|5.0|1.0
+38|"Translate the following from Japanese to English: ""おまえのため息が聞こえる"""||I can hear you sigh.|0.44138432|0.0|0.0|0.0|1.0|0.0
+39|"Translate the following from Japanese to English: ""防衛庁が防衛省に格上げされたのはなぜですか？"""||Why was the Japan Defense Agency upgraded to the Japanese Ministry of Defense?|0.3025392|0.0|0.0|0.0|5.0|1.0
+40|"Translate the following from Japanese to English: ""貧しさの反動が キラキラとか ヒラヒラに行くのよ"""|"""The backlash against poverty is to sparkle or flutter."""|My response to poverty came through glittery, lacey things.|0.67476374|0.0|0.1111111111111111|0.0|1.0|0.0
+41|"Translate the following from Japanese to English: ""俺の事は気にするな"""|"""Don't worry"|Dude, it doesn't care.|0.7289765|1.0|0.25|0.0|1.0|0.0
+42|"Translate the following from Japanese to English: ""大体１０００日だね"""|</answer|- That's like, what, 1,000 days?|0.4630151|0.0|0.0|0.0|1.0|0.0
+43|"Translate the following from Japanese to English: ""取締機関と軍のシステムに 私達のソフトウェアを被せて 彼等のレーダーに工作して 艦隊が探知されないように"""||We'll piggyback our software into their law enforcement and military computers, disable their radar so they can't detect our ships.|0.33029625|0.0|0.0|0.0|4.0|1.0
+44|"Translate the following from Japanese to English: ""ええと、ディープキス出来る？"""|"""And, can you give a deep kiss?"""|- Oh. Can you French kiss?|0.6992128|0.0|0.5|0.0|1.0|0.0
+45|"Translate the following from Japanese to English: ""払わないのなら 他で暮らして"""||If she doesn't start paying... I'm not. ...she has to leave.|0.27976596|0.0|0.0|0.0|2.0|0.0
+46|"Translate the following from Japanese to English: ""ここで見聞きしたことは口外してはいけません 私の明確な許可なくして この階を離れてもいけません"""||You will not speak of anything you hear or see, and you will not leave this level without my express permission.|0.44146824|0.0|0.0|0.0|4.0|1.0
+47|"Translate the following from Japanese to English: ""３人殺せば　アーサー 彼女は戻る"""|"""Kill three people and"|Do the three kills, Arthur. Get the girl back.|0.61578435|0.0|0.15384615384615383|0.0|3.0|0.0
+48|"Translate the following from Japanese to English: ""撮影の準備は？"""|"""Is everything ready for"|You're ready to shoot it now?|0.72106075|1.0|0.18181818181818182|0.0|5.0|1.0
+49|"Translate the following from Japanese to English: ""自腹を切るよ"""|"""I'll pay for it myself."" </answer"|I'll pay my own expenses.|0.8518177|1.0|0.4615384615384615|0.0|1.0|0.0
+50|"Translate the following from Japanese to English: ""有り金は50ルーブルで"""|</answer|I have 50 rubles.|0.49474|0.0|0.0|0.0|5.0|1.0
+51|"Translate the following from Japanese to English: ""チョル -シク?"""||Chul-sik?|0.4411965|0.0|0.0|0.0|1.0|0.0
+52|"Translate the following from Japanese to English: ""六ヶ月前まではGPSが 付いていたそうだが 人権協会か何かが 訴えたので 全部外したんだと"""|</answer|They used to have GPS until about six months ago when the ACLU or somebody sued them and they had to get rid of it.|0.41442528|0.0|0.0|0.0|4.0|1.0
+53|"Translate the following from Japanese to English: ""なのに彼の人相は　誰も知らないんでしょ？"""|"""But his appearance is something that no"|And no one can give us a description of him?|0.6421194|0.0|0.11764705882352941|0.0|3.0|0.0
+54|"Translate the following from Japanese to English: ""会合にいた奴だ"""|"""The person who was"|I think he was at the meeting too.|0.50489897|0.0|0.16666666666666666|0.0|1.0|0.0
+55|"Translate the following from Japanese to English: ""このロボットが 発明されたおかげで- -性的な人身売買の 発生率が38％減少したわ"""||Crimes in the sex trade are down 38% since the bots were introduced.|0.28656703|0.0|0.0|0.0|4.0|1.0
+56|"Translate the following from Japanese to English: ""助けがきたわ！"""|"""Help has arrived!"""|Thank God. Help's arrived!|0.8879958|1.0|0.5|0.0|4.0|1.0
+57|"Translate the following from Japanese to English: ""自叙伝にも書いているが 私は尊大で　神経質で　無愛想な..."""|</answer|There is a reason that my biography describes me as arrogant, prickly, brusque...|0.2971894|0.0|0.0|0.0|1.0|0.0
+58|"Translate the following from Japanese to English: ""すぐに警察に連絡しなくちゃ。"""|</|We must contact the police at once.|0.54396486|0.0|0.0|0.0|5.0|1.0
+59|"Translate the following from Japanese to English: ""その日は雨が降っており、さらに悪いことには、雷も鳴っていた。"""||The day was rainy, and what was worse, thundering.|0.4200153|0.0|0.0|0.0|4.0|1.0
+60|"Translate the following from Japanese to English: ""あなたが停止させるのは安全のためで..."""|</|It strikes to me that stopping is when you're safe.|0.4839543|0.0|0.0|0.0|3.0|0.0
+61|"Translate the following from Japanese to English: ""選択肢は２つ フラッドが欲しがるものを与えるか ここから出て行くかだ"""||You have two choices, give Flood what he wants or pack up and move.|0.3389542|0.0|0.0|0.0|4.0|1.0
+62|"Translate the following from Japanese to English: ""全ての鹿は貴方に屈し 全ての狼は貴方に屈する"""|All the deer will bow to you, and all the wolves will bow to you.|All the stags will bow.Ts all the wolves will bow.|0.8287537|1.0|0.6923076923076923|1.0|2.0|0.0
+63|"Translate the following from Japanese to English: ""ニーナ・シャープよ"""|"""Nina Sharp"""|It's Nina. Nina Sharp.|0.8430103|1.0|0.5714285714285715|1.0|3.0|0.0
+64|"Translate the following from Japanese to English: ""反対なら次の投票で 示してね？"""|"""If you're against it, show me next time, okay?"""|How's that for rocking the vote?|0.5641135|0.0|0.0|0.0|1.0|0.0
+65|"Translate the following from Japanese to English: ""白雪姫が来る前の こびとたちの家だ"""||Think of the Seven Dwarfs before Snow White showed up.|0.45428085|0.0|0.0|0.0|1.0|0.0
+66|"Translate the following from Japanese to English: ""リンは酸素で燃えるから"""|Rin burns due to oxygen|Well, phosphorus needs oxygen to burn.|0.6327116|0.0|0.1818181818181818|0.0|1.0|0.0
+67|"Translate the following from Japanese to English: ""マーク どこに行くのか分かってるのか"""||Mark, you don't know what you're moving into.|0.40314054|0.0|0.0|0.0|1.0|0.0
+68|"Translate the following from Japanese to English: ""デルタ班 スラスターをドック12へ"""||Delta team, deliver your thrusters to loading dock 12.|0.47827592|0.0|0.0|0.0|4.0|1.0
+69|"Translate the following from Japanese to English: ""絶対ジェドに 何かあったに違いないってね 彼のねぐらに"""|"""I'm sure something"|He swore up and down that something must've happened to Jed.|0.5445841|0.0|0.125|0.0|4.0|1.0
+70|"Translate the following from Japanese to English: ""完璧な狩猟マシン"""|Perfect hunting machine|Perfect hunting machines.|0.9275861|1.0|1.0|1.0|5.0|1.0
+71|"Translate the following from Japanese to English: ""アル中から　別の中毒に替わったわけだ"""||Swap one addiction for another, was it?|0.48466036|0.0|0.0|0.0|5.0|1.0
+72|"Translate the following from Japanese to English: ""ジョーイ・クィン 前は暗黙の了解があった"""|Joey Quinn had an unspoken agreement previously.|Used to have an understanding with him.|0.7036383|1.0|0.14285714285714285|0.0|3.0|0.0
+73|"Translate the following from Japanese to English: ""俺の幸せっていうのは 別に そんな物とか金とか..."""||But my happiness isn't based on material things or money.|0.39704806|0.0|0.0|0.0|4.0|1.0
+74|"Translate the following from Japanese to English: ""ライラック"""||Lilacs. Mmm.|0.49422616|0.0|0.0|0.0|1.0|0.0
+75|"Translate the following from Japanese to English: ""被害者の骨移植は メリーランド州のドナー"""||The victim's bone graft came from a cadaver donor at Lang Memorial in Maryland.|0.28457865|0.0|0.0|0.0|5.0|1.0
+76|"Translate the following from Japanese to English: ""- これは意外だ"""|This is unexpected.|- Didn't expect this.|0.85395145|1.0|0.28571428571428575|0.0|5.0|1.0
+77|"Translate the following from Japanese to English: ""本を待つんだ"""|"""Wait for the book"|Wait The book.|0.9238307|1.0|0.8571428571428571|1.0|2.0|0.0
+78|"Translate the following from Japanese to English: ""白状しろ、 ジーンばあさん家 から盗んできたんだろ？"""|"Final translation: ""Confess, you stole it from the Gein family, didn't you?"""|'Fess up. You steal that for me at Grandma Jean's house?|0.7145947|1.0|0.08|0.0|4.0|1.0
+79|"Translate the following from Japanese to English: ""４００メートル先に 危険箇所がある"""|There is a dangerous area 400 meters ahead|It better not happen again. - There's a hot spot 400 meters out.|0.8092398|1.0|0.380952380952381|0.0|2.0|0.0
+80|"Translate the following from Japanese to English: ""全員でここをお前らの家として 常に清潔にしなければならない"""|"""Everyone must keep this"|You will all make this bunkroom, your home. You will keep your home clean.|0.49860302|0.0|0.11111111111111112|0.0|4.0|1.0
+81|"Translate the following from Japanese to English: ""セクシー"""||- Hello... sexy.|0.4022309|0.0|0.0|0.0|1.0|0.0
+82|"Translate the following from Japanese to English: ""2晩くらい大丈夫だ"""|"""It's"|It's just a couple of nights. I can do it.|0.46308658|0.0|0.3076923076923077|0.0|1.0|0.0
+83|"Translate the following from Japanese to English: ""できることは全部しました　今回の ことは個人的な事柄ではありません"""||I really did everything I could. It's nothing personal.|0.37547627|0.0|0.0|0.0|1.0|0.0
+84|"Translate the following from Japanese to English: ""タフな野郎だ ウォーカーを倒した"""||He's a tough son of a bitch. Picked that walker apart in minutes.|0.35057527|0.0|0.0|0.0|4.0|1.0
+85|"Translate the following from Japanese to English: ""好きなところに行って 好きな自分になれる"""|"""Go to the place"|"This is saying, ""I can go anywhere I want. I can be anybody."""|0.5099065|0.0|0.11764705882352941|0.0|1.0|0.0
+86|"Translate the following from Japanese to English: ""我々が追跡する事を奴は知っています そこで　ここへ"""|"""He knows that we are tracking him"|The call came from a rest stop. CONKLIN: Yeah.|0.36087325|0.0|0.0|0.0|1.0|0.0
+87|"Translate the following from Japanese to English: ""遺体の発見者は? 日曜の朝に弟と一緒に 空港から家に戻ってきた彼女の夫が"""||This one's husband, coming home from the airport sunday morning with his brother.|0.29670498|0.0|0.0|0.0|4.0|1.0
+88|"Translate the following from Japanese to English: ""彼のベッドにいたね"""||I find you in his bed.|0.42452633|0.0|0.0|0.0|2.0|0.0
+89|"Translate the following from Japanese to English: ""〈あなたの新作を 見たいしね〉"""||Besides... I wanna see your next drama.|0.49468803|0.0|0.0|0.0|2.0|0.0
+90|"Translate the following from Japanese to English: ""空気の残りは？"""||How much time does the kid have left?|0.48541263|0.0|0.0|0.0|1.0|0.0
+91|"Translate the following from Japanese to English: ""前回は見逃した"""|"""The last meeting was overlooked"|I missed something once before; I won't...|0.7191667|1.0|0.0|0.0|2.0|0.0
+92|"Translate the following from Japanese to English: ""ええ ピアスを つけてるの"""|""""|I know, it's a piercing. I did it last night.|0.5499385|0.0|0.0|0.0|1.0|0.0
+93|"Translate the following from Japanese to English: ""グレンジャー博士は 殺される日までの数日間 同じ番号に"""|</answer|Dr. Granger... made a number of calls from his cell phone to the same number in the days leading up to his death.|0.350662|0.0|0.0|0.0|4.0|1.0
+94|"Translate the following from Japanese to English: ""なにものであっても　俺の街ではしゃぐのは許せねえ"""|"""I cannot forgive those who revel in my town, no matter who they are."""|Well, he's not gonna mess with my town.|0.6409797|0.0|0.17391304347826086|0.0|1.0|0.0
+95|"Translate the following from Japanese to English: ""さぁ　起きろ　出かけるぞ"""|"""Alright, wake up, I'm leaving."""|Come on, rise and shine. Got to get going.|0.7581301|1.0|0.0|0.0|3.0|0.0
+96|"Translate the following from Japanese to English: ""サリを殺した奴は 必ず見つける　何があっても サリと一緒にいたかった"""||Look, I just figured we'd find who killed her, and whatever happened between Sari and me would stay between Sari and me.|0.2653253|0.0|0.0|0.0|2.0|0.0
+97|"Translate the following from Japanese to English: ""それは現実の世界だからだ 本当のヒーローが必要なんだ"""||It's because the real world, needs real heroes.|0.43274823|0.0|0.0|0.0|3.0|0.0
+98|"Translate the following from Japanese to English: ""今朝の事を 謝っておきたい"""|"""I want to apologize"|I just wanted to apologize for this morning.|0.81639075|1.0|0.6666666666666666|1.0|3.0|0.0
+99|"Translate the following from Japanese to English: ""1. 4 TB/s(テラバイト/秒)."""|"""1. 4 TB/s (terabytes per second"|1. 4 Terabytes per second.|0.907379|1.0|0.8333333333333333|1.0|5.0|1.0
+100|"Translate the following from Japanese to English: ""ルーク 上昇しろ！"""|"""Luke, rise up!"""|Luke, pull up!|0.8601228|1.0|0.6666666666666666|1.0|3.0|0.0
+101|"Translate the following from Japanese to English: ""しかし彼らのコントロールを 狂わせた味覚は..."""||But the one taste that caused them to lose all control...|0.4091933|0.0|0.0|0.0|4.0|1.0
+102|"Translate the following from Japanese to English: ""４日間のパーティーは 大丈夫そう？"""|"""Is the four-day party okay?"""|I am way ahead of you, girl. He even volunteered to drive.|0.4146945|0.0|0.0|0.0|1.0|0.0
+103|"Translate the following from Japanese to English: ""もうかなりの数だ お前の体が持たんぞ"""|"""You've already accumulated quite a"|It's 100â° tod. You can't keep this up.|0.5220662|0.0|0.125|0.0|1.0|0.0
+104|"Translate the following from Japanese to English: ""少し時間が掛かりそうだ"""|It seems like it will take a short while.|It's just... going to take a little bit of time.|0.8639363|1.0|0.3|0.0|3.0|0.0
+105|"Translate the following from Japanese to English: ""あんたのSUVの ホイールベースとタイヤ痕が"""|</|The wheelbase and tire pattern of your S.U.V.|0.48400724|0.0|0.0|0.0|5.0|1.0
+106|"Translate the following from Japanese to English: ""たぶんね"""|Probably|I'd assume so, yeah.|0.6235808|0.0|0.0|0.0|1.0|0.0
+107|"Translate the following from Japanese to English: ""♪ Loving mother ♪"""|"""♪ Loving mother"|♫ ♪ ♫ Loving mother ♫ ♪ ♫|0.8882625|1.0|1.0|1.0|1.0|0.0
+108|"Translate the following from Japanese to English: ""おいおい　待てよ"""|""""|-I'll be there again in the morning. Come on, I didn't mean it like that.|0.5199654|0.0|0.0|0.0|1.0|0.0
+109|"Translate the following from Japanese to English: ""- 君はそんな事　聞かなかった"""|"""You didn't hear"|- You did not just ask that.|0.68898314|0.0|0.2|0.0|1.0|0.0
+110|"Translate the following from Japanese to English: ""私は私を選択します"""|"""I choose myself"""|I choose for me.|0.82863176|1.0|0.5714285714285715|1.0|3.0|0.0
+111|"Translate the following from Japanese to English: ""失血死するわ"""|""""|She's exsanguinated. Drained all her blood.|0.5347238|0.0|0.0|0.0|4.0|1.0
+112|"Translate the following from Japanese to English: ""何があっても 寝てるわ"""|"""No matter what, I'll be sleeping."""|Sleeping right through all that.|0.8093532|1.0|0.16666666666666666|0.0|5.0|1.0
+113|"Translate the following from Japanese to English: ""オフィスへ"""||So you lied to me about a case?|0.48076123|0.0|0.0|0.0|1.0|0.0
+114|"Translate the following from Japanese to English: ""ターゲットが消去したと思ってたが"""|</answer|The target didn't wipe Cade's devices like we thought.|0.4029314|0.0|0.0|0.0|3.0|0.0
+115|"Translate the following from Japanese to English: ""ドアにはセンサーがある ドアが開いた時 なぜアラームが鳴らなかった？"""||Now, there's sensors here on the door.|0.4772437|0.0|0.0|0.0|3.0|0.0
+116|"Translate the following from Japanese to English: ""行こうと思ってるんだが..."""|"""I'm thinking about going..."""|I've been trying to get out there. I'm sorry, uh...|0.60007364|0.0|0.23529411764705882|0.0|3.0|0.0
+117|"Translate the following from Japanese to English: ""− ""それ""が？"""|"""What"|It. Is it?|0.6675589|0.0|0.0|0.0|2.0|0.0
+118|"Translate the following from Japanese to English: ""その違いこそが芸術だ"""|"""It is the distinction that makes art."""|The difference is the art of it.|0.8480016|1.0|0.42857142857142855|0.0|3.0|0.0
+119|"Translate the following from Japanese to English: ""銃を持って こっちに座ってる"""|"""Bring the gun over and sit down here"""|I'm just gonna sit over here with my gun.|0.813549|1.0|0.22222222222222224|0.0|3.0|0.0
+120|"Translate the following from Japanese to English: ""＜死ぬ気なんですね＞"""|"""You're really thinking about it,"|But never further. You think this is where you die.|0.48918492|0.0|0.25|0.0|3.0|0.0
+121|"Translate the following from Japanese to English: ""お前の女になんかにならない！"""|""""|You ain't gonna make me no bitch!|0.64735514|0.0|0.0|0.0|5.0|1.0
+122|"Translate the following from Japanese to English: ""他の生徒との関係が心配?"""||Are you worried about keeping up with the other students?|0.4685355|0.0|0.0|0.0|3.0|0.0
+123|"Translate the following from Japanese to English: ""いますぐ中止しろ！"""|</|Well, unrig it. Unrig it now!|0.52172166|0.0|0.0|0.0|1.0|0.0
+124|"Translate the following from Japanese to English: ""くそっ そこから出ると　感電死"""|"""Damn, if"|Hey, asshole, you jump off that block, you electrocute him.|0.48536593|0.0|0.0|0.0|1.0|0.0
+125|"Translate the following from Japanese to English: ""輝ける真実の道しるべとして"""|"""As a gleaming signpost of"|A shinning beacon of truth.|0.75796956|1.0|0.4000000000000001|0.0|5.0|1.0
+126|"Translate the following from Japanese to English: ""- 君が怒るなら　俺は行く"""|If you're angry,|- If you're going to be mad, I can go.|0.68582815|0.0|0.4285714285714285|0.0|4.0|1.0
+127|"Translate the following from Japanese to English: ""うちのゴミに何してた？"""|"""What were you doing"|The hell'd you do to my garbage?|0.6238002|0.0|0.3333333333333333|0.0|1.0|0.0
+128|"Translate the following from Japanese to English: ""このシャトルを動かす..."""|"""Move this shuttle..."""|I have to get this shuttle started!|0.8459227|1.0|0.4|0.0|2.0|0.0
+129|"Translate the following from Japanese to English: ""連れ出して 何か知ってるかも"""|"""Take someone out, they might have"|Take her out. See if she knows anything.|0.6474421|0.0|0.28571428571428575|0.0|3.0|0.0
+130|"Translate the following from Japanese to English: ""簡単な事から始めよう"""||Nothing like the easy stuff.|0.5114744|0.0|0.0|0.0|2.0|0.0
+131|"Translate the following from Japanese to English: ""彼は怪物ね"""|"""He is a monster"|He's a holy terror.|0.79651487|1.0|0.4444444444444445|0.0|3.0|0.0
+132|"Translate the following from Japanese to English: ""彼は平然と取引をつぶしました。"""||He sank the deal without batting an eyelash.|0.44147375|0.0|0.0|0.0|4.0|1.0
+133|"Translate the following from Japanese to English: ""- なぜ? 悪党を喜ばせるため?"""|Why|Keep the bastards happy?|0.57773036|0.0|0.0|0.0|1.0|0.0
+134|"Translate the following from Japanese to English: ""バリーと話したそうだな"""|</answer|I heard you talked to Barry.|0.48555675|0.0|0.0|0.0|3.0|0.0
+135|"Translate the following from Japanese to English: ""彼の背中は爆弾にやられました"""|His back was injured by a bomb blast.|His back was blown apart|0.8461356|1.0|0.4615384615384615|0.0|3.0|0.0
+136|"Translate the following from Japanese to English: ""彼女は体重を減らそうとしている。"""||She is trying to lose weight.|0.4597204|0.0|0.0|0.0|5.0|1.0
+137|"Translate the following from Japanese to English: ""運転中に娘婿を バカにしてたら―"""||We were headed to your sister's, I made a crack about your brother-in-law, and your mother got angry.|0.3419006|0.0|0.0|0.0|4.0|1.0
+138|"Translate the following from Japanese to English: ""判るんです"""|"""I"|I know.|0.6389543|0.0|0.6666666666666666|1.0|1.0|0.0
+139|"Translate the following from Japanese to English: ""彼はあなたを殺すつもりよ 行って　さあ　逃げて！"""|He intends to kill you|He's going to kill you. Go, now.|0.84224075|1.0|0.6153846153846154|1.0|5.0|1.0
+140|"Translate the following from Japanese to English: ""議会に立つのが楽しみです"""|"""I am looking forward to addressing the parliament."" </"|And you know, I cannot wait to represent your views in Congress.|0.7123621|1.0|0.2|0.0|1.0|0.0
+141|"Translate the following from Japanese to English: ""もっと何かあるはずよ"""|"""There must be something more."" </"|There's more. There's got to be more.|0.8483875|1.0|0.42857142857142855|0.0|5.0|1.0
+142|"Translate the following from Japanese to English: ""主発電機の接続チェック"""||Just to check the connectivity on the primary generator.|0.41413626|0.0|0.0|0.0|3.0|0.0
+143|"Translate the following from Japanese to English: ""彼女を抱きしめた。"""|They hugged her. </|I hugged her.|0.8796863|1.0|0.6666666666666666|1.0|3.0|0.0
+144|"Translate the following from Japanese to English: ""2倍 3倍になった"""|"""2 times"|It doubled, then it tripled. (REGISTER DINGS)|0.6562397|0.0|0.0|0.0|3.0|0.0
+145|"Translate the following from Japanese to English: ""あなたが着くと ちょうどトニーが彼を？"""|"""When you arrive, Tony will just be leaving?"""|So that you arrived At the marina When tony pulled the trigger?|0.68357325|0.0|0.3|0.0|2.0|0.0
+146|"Translate the following from Japanese to English: ""身分証を提示しろ 中を調べるんだ"""||Show me some identification. Check inside.|0.5529109|0.0|0.0|0.0|3.0|0.0
+147|"Translate the following from Japanese to English: ""私に何を期待してる？"""||What are you expecting from me?|0.56265926|0.0|0.0|0.0|5.0|1.0
+148|"Translate the following from Japanese to English: ""彼らがデートをしているのを見かけて「近々結婚するの」ってきいたんだ。"""||"When I saw them on a date, I asked them, ""Do I hear wedding bells?"""|0.3788541|0.0|0.0|0.0|4.0|1.0
+149|"Translate the following from Japanese to English: ""最近学んだ事と言えば― 注意してないと 噛みつかれたり―"""||If I had learned anything these past few months besides what a fucking notary does, it's that if you don't pay attention to details, they can come up and bite you in the ass.|0.38175726|0.0|0.0|0.0|2.0|0.0
+150|"Translate the following from Japanese to English: ""暗号化されたファイルの拡張子に *.pgp を使う: このオプションを指定すると、暗号化されたすべてのファイルの拡張子に .gpg ではなく .pgp を使います。このオプションは PGP (Pretty Good Privacy) ユーザとの互換性のために存在します。"""||Use *. pgp extension for encrypted files: Checking this option will append a. pgp extension to all encrypted files instead of a. gpg extension. This option will maintain compatibility with users of PGP (Pretty Good Privacy) software.|0.35140827|0.0|0.0|0.0|4.0|1.0
+151|"Translate the following from Japanese to English: ""娘さんを見つけるまではな"""|"""Until I find"|Until I find your daughter. Then, we'll see.|0.7229315|1.0|0.5|0.0|3.0|0.0
+152|"Translate the following from Japanese to English: ""（吉森） 体温計の目盛り 上げるならな ぬるま湯に つけるのが一番だぞ"""||If you want to raise the readings of the thermometer... Dipping it in lukewarm water is the best.|0.38990417|0.0|0.0|0.0|3.0|0.0
+153|"Translate the following from Japanese to English: ""分からないわ"""|"""I don't grasp it."""|I don't know.|0.7779426|1.0|0.6666666666666665|1.0|1.0|0.0
+154|"Translate the following from Japanese to English: ""シュガー・ボウル スーパー・ボウル - こんな大イベントは重要なカモだ"""|"""Sugar Bowl Super Bowl"|Uh, world series, final four, the sugar bowl, super bowl -- any big event like this is sucker central.|0.5667912|0.0|0.3636363636363636|0.0|2.0|0.0
+155|"Translate the following from Japanese to English: ""運がよかった　だろ？"""|""""|You just tripped! As luck would have it, hmm?|0.6437657|0.0|0.0|0.0|1.0|0.0
+156|"Translate the following from Japanese to English: ""どうして簡単にあきらめる?"""|Why do you|Why are we giving up so easily? !|0.6552204|0.0|0.2|0.0|1.0|0.0
+157|"Translate the following from Japanese to English: ""ダシュコフ王子・・・"""|Prince Dashkov|Prince Dashkov, you look so...|0.6497363|0.0|0.5714285714285715|1.0|1.0|0.0
+158|"Translate the following from Japanese to English: """"私は約束を破った事がない だが済まない、無理だ"""""||Lillian, I have never broken my word to you, but I'm sorry, it is dead.|0.36528108|0.0|0.0|0.0|1.0|0.0
+159|"Translate the following from Japanese to English: ""面会にきてくれるか？"""|Would you come to|You'll visit me, though, yeah?|0.7572515|1.0|0.2|0.0|3.0|0.0
+160|"Translate the following from Japanese to English: ""実際　君の通うジムと同じブロックだ"""||Same block as your gym actually.|0.4800382|0.0|0.0|0.0|4.0|1.0
+161|"Translate the following from Japanese to English: ""マリコが権力を持てば こいつは捨てられる"""|If Mariko gains power, this person will be discarded|If Mariko got all that power, she would dump his ass.|0.8722908|1.0|0.3|0.0|3.0|0.0
+162|"Translate the following from Japanese to English: ""彼らは英語の知識の点では互角だ。"""|They are equally proficient in English|They are equally matched in their knowledge of English.|0.9261383|1.0|0.6666666666666667|1.0|4.0|1.0
+163|"Translate the following from Japanese to English: ""内輪で話が出来る場所は"""|"""A place where we can"|Is there anywhere we could speak a little more privately?|0.71731013|1.0|0.13333333333333333|0.0|5.0|1.0
+164|"Translate the following from Japanese to English: ""炭になった組織が あるかもしれない"""||Upside: there might be some charred tissue for me.|0.3952303|0.0|0.0|0.0|1.0|0.0
+165|"Translate the following from Japanese to English: ""分からない"""|33|I don't know.|0.573212|0.0|0.0|0.0|1.0|0.0
+166|"Translate the following from Japanese to English: ""心配してないから ...意図してない"""||And I really don't care.|0.4560411|0.0|0.0|0.0|1.0|0.0
+167|"Translate the following from Japanese to English: ""何が言いたい"""|""""|You watch what you say.|0.68092865|0.0|0.0|0.0|1.0|0.0
+168|"Translate the following from Japanese to English: ""何で？"""||Why?|0.5524389|0.0|0.0|0.0|5.0|1.0
+169|"Translate the following from Japanese to English: ""デュバクの件で巻き込まれた女性だ"""||A woman who's involved with Dubaku.|0.4547914|0.0|0.0|0.0|3.0|0.0
+170|"Translate the following from Japanese to English: ""サマーランドに行くんだ"""||We are going to Summerland.|0.4081215|0.0|0.0|0.0|5.0|1.0
+171|"Translate the following from Japanese to English: ""早く脱出だ"""|"""Hurry up and escape"""|-I'm fine, just get me the hell out of here.|0.6635101|0.0|0.0|0.0|3.0|0.0
+172|"Translate the following from Japanese to English: ""いつかまた モアナ ママ！"""|"""One more time, Moana"|See you out there, Moana. Cheeeehoooo! Mom!|0.756292|1.0|0.18181818181818182|0.0|4.0|1.0
+173|"Translate the following from Japanese to English: ""ですが　先日言いましたよね"""||But last time, you told me|0.42902333|0.0|0.0|0.0|4.0|1.0
+174|"Translate the following from Japanese to English: ""「別のルートを使えと いま知らせろ」"""|"""Tell me"|He should use an alternate route.|0.44345236|0.0|0.0|0.0|3.0|0.0
+175|"Translate the following from Japanese to English: ""通常は予期しない事の 支持者じゃない だが　これは... 首尾よく除外するものだ"""|</|I'm not usually a fan of surprises, but this... this is one I'll happily except.|0.47575575|0.0|0.0|0.0|5.0|1.0
+176|"Translate the following from Japanese to English: ""いつだったか リバー８の一人で 頭にタトｩをした男がいたの"""|""""|Yeah... the other night, one of the Liber8 thugs had a split skull tattoo on his head.|0.41874424|0.0|0.0|0.0|2.0|0.0
+177|"Translate the following from Japanese to English: ""マックス　今の音は？"""|</answer|Max, what was that?|0.58281726|0.0|0.0|0.0|2.0|0.0
+178|"Translate the following from Japanese to English: ""大丈夫"""|"""It's cool, it's not a big deal, it's not"|It's all right.|0.67822564|0.0|0.25|0.0|1.0|0.0
+179|"Translate the following from Japanese to English: ""これは僕のせいだ 責任を取る"""||This is my fault. I got to fix this.|0.48719108|0.0|0.0|0.0|3.0|0.0
+180|"Translate the following from Japanese to English: ""あなたのせいじゃない 責任はない"""|It's not your fault|Joe, this isn't your fault. It's not your fault.|0.8082434|1.0|0.625|1.0|1.0|0.0
+181|"Translate the following from Japanese to English: ""それから 〈""シビランス""はNSAの 内部監査だが役立たずだ..."""|"""After that, 'Balance' is an internal audit by the NSA, but it's useless..."""|"""sibilance"" is an internal audit of the nsa intranet."|0.7413518|1.0|0.5217391304347826|1.0|1.0|0.0
+182|"Translate the following from Japanese to English: ""お前の説法に 10ドルは払わん でも信者がいないと 捜査に困るだろ？ まだ発作中かな"""||Well, I don't use $10 words as much as you, but for a guy who sees no point in existence, you sure fret about it an awful lot, and you still sound panicked.|0.30971038|0.0|0.0|0.0|1.0|0.0
+183|"Translate the following from Japanese to English: ""時間は最大限に活用すべきだ。"""|"""Make the most of your time."""|You must make the most of your time.|0.91964006|1.0|0.8571428571428571|1.0|5.0|1.0
+184|"Translate the following from Japanese to English: ""血管外科術の時 主任研修医が　いつも言ってた"""||Remember, on our vascular rotation, how the chief resident always used to say,|0.37886742|0.0|0.0|0.0|3.0|0.0
+185|"Translate the following from Japanese to English: ""薬取引が割に合わないからか？"""|"""Is it because"|'Cause drug dealing is not good enough for you?|0.5937387|0.0|0.16666666666666666|0.0|1.0|0.0
+186|"Translate the following from Japanese to English: ""実に面白いね"""|"""Really"|what's that? freddy krueger done been up in here or something? oh, no, man.|0.5679126|0.0|0.0|0.0|1.0|0.0
+187|"Translate the following from Japanese to English: ""ここの帯水層のお陰で 彼らは300年は生きる"""|"""Thanks to the groundwater"|Here, in our aquifer... they can live 300.|0.4361683|0.0|0.0|0.0|2.0|0.0
+188|"Translate the following from Japanese to English: ""期待に胸膨らませて"""|"""With my heart swelling with anticipation, excitement, hope, eagerness, enthusiasm, optimism, confidence, determination, resolve, enthusiasm, optimism, confidence, determination, resolve, enthusiasm, optimism, confidence, determination,"|To where I am expected, ma'am|0.42471558|0.0|0.0|0.0|1.0|0.0
+189|"Translate the following from Japanese to English: ""外に出ようとしていた"""|""""|She was trying to get out.|0.55470306|0.0|0.0|0.0|3.0|0.0
+190|"Translate the following from Japanese to English: ""私は　彼にできる限りの援助を 申し出た それでも彼は　何回も何回も 私の申し出を断ったの"""||I offered him all the help in the world, and he turned me down many times.|0.34566873|0.0|0.0|0.0|4.0|1.0
+191|"Translate the following from Japanese to English: ""キミはハデで パーティーが良く似合う"""|"""You are"|You're just a charger and a party guy.|0.6022931|0.0|0.1818181818181818|0.0|1.0|0.0
+192|"Translate the following from Japanese to English: ""私... あぁ ジョン"""|"""I... ah,"|I...oh, John.|0.7315964|1.0|0.4|0.0|5.0|1.0
+193|"Translate the following from Japanese to English: ""気をつけて 気分がすぐれないので"""||But be careful, he's in a temper.|0.40254414|0.0|0.0|0.0|1.0|0.0
+194|"Translate the following from Japanese to English: ""誰も何処にいるか 分からないのか？"""|"""Don't you know"|Anybody know where our special guest is?|0.5747486|0.0|0.18181818181818182|0.0|1.0|0.0
+195|"Translate the following from Japanese to English: """"金のカゴ""のスタンプが"""||That stamp right there is from the Gilded Cage...|0.42255238|0.0|0.0|0.0|1.0|0.0
+196|"Translate the following from Japanese to English: ""ここに銃が置いてある。"""||There's a gun down here.|0.4591936|0.0|0.0|0.0|5.0|1.0
+197|"Translate the following from Japanese to English: ""インストール時に'make'を行っている際、以下のようなエラーを発生す るとした場合、"""|</answer|During the make portion of installation, if you encounter problems that look similar to this:|0.42582738|0.0|0.0|0.0|3.0|0.0
+198|"Translate the following from Japanese to English: ""君は　グレッグのことで とても忙しかったからね"""|"""You were very busy"|Oh, you were very busy with Greg.|0.75705624|1.0|0.7272727272727273|1.0|4.0|1.0
+199|"Translate the following from Japanese to English: ""彼は信用できるわ"""||Because he is trustworthy, Barry.|0.42259657|0.0|0.0|0.0|1.0|0.0
+200|"Translate the following from Japanese to English: ""会話のことは深刻じゃない"""|"""The conversation isn't a big problem."""|I'm seriously not going there for a conversation.|0.6004495|0.0|0.125|0.0|1.0|0.0
+201|"Translate the following from Japanese to English: ""- 明日まで待ってろよ"""|"""Wait until"|- You'll have them tomorrow.|0.5813172|0.0|0.0|0.0|3.0|0.0
+202|"Translate the following from Japanese to English: ""君が僕と同じように苦しんでいるなら 教えてくれないか"""|If you are in|If you are suffering as much as I am, please, tell me.|0.5903976|0.0|0.375|0.0|4.0|1.0
+203|"Translate the following from Japanese to English: ""そうだね （勇気）うん"""|""""|-Right. -Yeah.|0.5361222|0.0|0.0|0.0|1.0|0.0
+204|"Translate the following from Japanese to English: ""記事の内容が心配"""||What's Jon going to say about that in his article.|0.3974962|0.0|0.0|0.0|1.0|0.0
+205|"Translate the following from Japanese to English: ""バーネットは口を割るかもしれない"""|"""Barnett might"|Bauer will finish what he started. Burnett will tell him everything.|0.53805363|0.0|0.0|0.0|1.0|0.0
+206|"Translate the following from Japanese to English: ""トムとはもう何ヶ月も会っていない。"""|Tom hasn't seen me|I haven't seen Tom in months.|0.8361518|1.0|0.3333333333333333|0.0|3.0|0.0
+207|"Translate the following from Japanese to English: ""憎み合っていましたよ"""|They were at loggerheads. </answer|Of course. They hated each other.|0.69909|0.0|0.1818181818181818|0.0|3.0|0.0
+208|"Translate the following from Japanese to English: ""考えがあるなら別だけど"""|"""If you have a thought, that's a different angle."""|So unless you can convince him to booty bump...|0.42713594|0.0|0.10526315789473685|0.0|1.0|0.0
+209|"Translate the following from Japanese to English: ""- 目的は？"""|</answer|- What do you do with it?|0.59682083|0.0|0.0|0.0|1.0|0.0
+210|"Translate the following from Japanese to English: ""すごい遺産よ"""|"""What a splendid legacy"|Maybe he cut off his son.|0.45986754|0.0|0.0|0.0|1.0|0.0
+211|"Translate the following from Japanese to English: ""もし俺が何らかの救済を 見つけるつもりなら"""|"""If I am going to find any kind of relief,"|If I'm going to find any kind of redemption,|0.76600033|1.0|0.8000000000000002|1.0|3.0|0.0
+212|"Translate the following from Japanese to English: ""怪物を倒したんでしょうか？"""||How do you think he beat this creature?|0.426875|0.0|0.0|0.0|3.0|0.0
+213|"Translate the following from Japanese to English: ""こうして みんな窮地に陥るのさ"""|"""This way, everyone ends up in a tight spot."""|Once they get a few dollars, they become greedy and want more.|0.44563964|0.0|0.09523809523809525|0.0|1.0|0.0
+214|"Translate the following from Japanese to English: ""ディーク 右に敵だ！"""|"""Deik, there's an enemy to the right"|Deke, on your right!|0.7680672|1.0|0.16666666666666666|0.0|3.0|0.0
+215|"Translate the following from Japanese to English: ""ふざけないで　でも　正直言って"""|"""Don't be silly"|I know you're kidding but, honestly,|0.64194936|0.0|0.0|0.0|3.0|0.0
+216|"Translate the following from Japanese to English: ""チルトン!"""|</|CHILTON!|0.63478976|0.0|0.0|0.0|5.0|1.0
+217|"Translate the following from Japanese to English: ""スイカで本当に 釣れるっていうところ 証明して見せてください"""|"""Please prove that something can really be caught with"|Hurry and get better... so you can prove if watermelon can really catch fish.|0.7011727|1.0|0.2608695652173913|0.0|1.0|0.0
+218|"Translate the following from Japanese to English: ""（ロシア語を喋る） バスには乗らなかったの"""|"""I didn't get on the bus ("|I never got on the bus.|0.8744141|1.0|0.6153846153846153|1.0|5.0|1.0
+219|"Translate the following from Japanese to English: ""私たちが素晴らしい存在だと 考えてるんですか？"""||You think we're extraordinary?|0.5025363|0.0|0.0|0.0|4.0|1.0
+220|"Translate the following from Japanese to English: ""俺がそうしないならどうする?"""||And if I don't, then what?|0.5040507|0.0|0.0|0.0|5.0|1.0
+221|"Translate the following from Japanese to English: ""知らないでしょ ニコール"""|"""Nicole, you"|You don't know that, Nicole.|0.7532271|1.0|0.25|0.0|3.0|0.0
+222|"Translate the following from Japanese to English: ""デズモンド、もう行くわ"""||Look,desmond,I'm going to go.|0.43620592|0.0|0.0|0.0|2.0|0.0
+223|"Translate the following from Japanese to English: ""牛と犬は紙一重だろ"""|"""Cows"|Well, it's not that big a deal. A lot of dogs look like cows.|0.6440803|0.0|0.125|0.0|1.0|0.0
+224|"Translate the following from Japanese to English: ""医者だ"""|</answer|Beta, get a doctor! No.|0.6406405|0.0|0.0|0.0|1.0|0.0
+225|"Translate the following from Japanese to English: ""放送が始まる"""||Guys, it's starting! It's starting.|0.4731581|0.0|0.0|0.0|1.0|0.0
+226|"Translate the following from Japanese to English: ""だから 俺は ヒッチハイクさ"""|"""That's the way I"|So it was me for the thumb.|0.57348126|0.0|0.16666666666666666|0.0|1.0|0.0
+227|"Translate the following from Japanese to English: ""- 手を貸してくれ"""|"""- Please"|- Will you please help me?|0.7059747|1.0|0.33333333333333337|0.0|1.0|0.0
+228|"Translate the following from Japanese to English: ""目指すは優勝　負けたら終了"""||It's first place. It's go big or go home.|0.50419384|0.0|0.0|0.0|2.0|0.0
+229|"Translate the following from Japanese to English: ""本日の試験結果を伝えるため ここに来てもらった"""|"""Come here to convey the results of"|We gathered here to evaluate the results of today's exam.|0.66710615|0.0|0.5555555555555556|1.0|4.0|1.0
+230|"Translate the following from Japanese to English: ""オーダーしよう"""|"""Ordering now please"" </"|We should place an order.|0.8181337|1.0|0.25|0.0|3.0|0.0
+231|"Translate the following from Japanese to English: ""彼女は 密着双子の呪いを使った"""|</|- Yes. She used the Verfluchte Zwillingsschwester.|0.30055818|0.0|0.0|0.0|1.0|0.0
+232|"Translate the following from Japanese to English: ""♪ Yes, peace train, holy roller ♪"""|"""♪ Yes, peace train, holy roller ♪"""|♪ Yes, peace train, holy roller ♪|0.95335704|1.0|1.0|1.0|5.0|1.0
+233|"Translate the following from Japanese to English: ""収容所でレイと居た者に..."""||A soldier brought it by today. He and Ray were prisoners together.|0.33560765|0.0|0.0|0.0|1.0|0.0
+234|"Translate the following from Japanese to English: ""死体の謎と お前の告白を 知っているのは 私だけだ"""|"""I am the only one who knows the mystery of the corpse and your confession."""|I have your wife's body and your confession.|0.6941376|0.0|0.33333333333333337|0.0|3.0|0.0
+235|"Translate the following from Japanese to English: ""そうだな"""|"""That's"|Yes.|0.63726455|0.0|0.0|0.0|1.0|0.0
+236|"Translate the following from Japanese to English: ""今　お母さんが亡くなったら 会わなかった事をきっと後悔する もちろん　勝ったんだろ？"""|"""If my mother were to pass away now, I would definitely regret not seeing her. Of course, you won, didn't you?"""|Tell me you're winning.|0.55511874|0.0|0.07407407407407407|0.0|1.0|0.0
+237|"Translate the following from Japanese to English: ""もう行かないと 安全じゃなくなる"""||We should get going now. This isn't safe for any of us.|0.40844685|0.0|0.0|0.0|3.0|0.0
+238|"Translate the following from Japanese to English: ""こっちへおいで　シャフラネック"""|"""Come over here, Shafu neck"""|Come a little closer Safranek.|0.7677213|1.0|0.20000000000000004|0.0|3.0|0.0
+239|"Translate the following from Japanese to English: ""愛する夫が 目の前で刺されて"""||The man she loved was getting knifed in front of her eyes.|0.37157023|0.0|0.0|0.0|4.0|1.0
+240|"Translate the following from Japanese to English: ""もっと早く連絡すべきだった"""||I should've called sooner.|0.4337598|0.0|0.0|0.0|5.0|1.0
+241|"Translate the following from Japanese to English: ""撮れよ"""|"""Get it on the screen"""|Get this shit, dude.|0.67193305|0.0|0.22222222222222224|0.0|1.0|0.0
+242|"Translate the following from Japanese to English: ""触れたりして悪かった"""||Hey, I'm sorry I touched you.|0.43945342|0.0|0.0|0.0|3.0|0.0
+243|"Translate the following from Japanese to English: ""倉庫に 保管してあったの"""||It was in storage, part of an estate collection in Bremen.|0.30656874|0.0|0.0|0.0|3.0|0.0
+244|"Translate the following from Japanese to English: ""握手くらいしろよ"""|"""Do a handshake, if that's the"|He said hi to you, shake his hand.|0.79550713|1.0|0.0|0.0|3.0|0.0
+245|"Translate the following from Japanese to English: ""当然の報いを"""|"""The punishment that was well-deserved"""|But very much deserve.|0.7114435|1.0|0.2|0.0|1.0|0.0
+246|"Translate the following from Japanese to English: ""やろうと思えば皆殺してきたが そうはしなかった"""|"""If one wanted to, they could have killed everyone, but they didn't."""|I could have killed you all. I didn't.|0.8091015|1.0|0.4545454545454546|0.0|4.0|1.0
+247|"Translate the following from Japanese to English: ""彼には暫くこの艦に居てもらうわ 用が済むまでね"""|"""I'll have him stay"|He'll remain on the ship until he's no longer needed.|0.6173904|0.0|0.11764705882352941|0.0|3.0|0.0
+248|"Translate the following from Japanese to English: ""エレーン、お前の詮索好きのおかげで 俺たちのこのライフスタイルじゃあ 赤ん坊と一緒に暮らせない事が分かった たとえ欲しく無い赤ん坊でもな"""|"""Elean, because of your in"|You know Elaine certain before we lived a life that does not tolerate baby even that we want and do not want it.|0.47514483|0.0|0.0|0.0|2.0|0.0
+249|"Translate the following from Japanese to English: """"R・L・スタイン""に 何があったんだ？"""|"""What happened to 'R・L・Stine'"|"""R.L. Stine"" What ever happened to that guy?"|0.8929438|1.0|0.4|0.0|4.0|1.0
+250|"Translate the following from Japanese to English: ""将来何が起こるかは解らない。"""|"""The future is uncertain."""|We cannot tell what may happen in future.|0.8355793|1.0|0.16666666666666666|0.0|4.0|1.0
+251|"Translate the following from Japanese to English: ""宇宙船に連れて行ってくれ"""|"""Take me"|You take me to the ship.|0.70075995|1.0|0.5|0.0|3.0|0.0
+252|"Translate the following from Japanese to English: ""その会社は事実上は倒産だ。"""||That company is, in effect, bankrupt.|0.4316598|0.0|0.0|0.0|5.0|1.0
+253|"Translate the following from Japanese to English: ""彼らは官能的快楽にふけった。"""|They|They gave themselves up to the enjoyment of sensual pleasures.|0.5157645|0.0|0.18181818181818182|0.0|4.0|1.0
+254|"Translate the following from Japanese to English: ""石弓持って 黙って見てたのかよ"""||For all the good you guys did in here you could have stayed outside with your fucking crossbows!|0.35118625|0.0|0.0|0.0|1.0|0.0
+255|"Translate the following from Japanese to English: ""ちょ ちょっと 森田さん 森田さん"""|"""Hey, Mr. Morita,"|Morita san! Morita san!|0.62968665|0.0|0.28571428571428575|0.0|1.0|0.0
+256|"Translate the following from Japanese to English: ""クレアとルターは電車になります。"""|Claire and Luther become the train.|Claire and Luther will be on the train.|0.88454634|1.0|0.7142857142857143|1.0|3.0|0.0
+257|"Translate the following from Japanese to English: ""患者のバイタルをモニターで確認して下さい。 すぐに戻ってきます。"""||Please monitor the patient's vitals, and I'll be right back.|0.45103246|0.0|0.0|0.0|5.0|1.0
+258|"Translate the following from Japanese to English: ""いい事も、そうでもない事も"""|"""Good things, and things that aren't necessarily so"" </"|Beautiful ones. Wasn't all bad, you know.|0.6930663|0.0|0.11764705882352941|0.0|3.0|0.0
+259|"Translate the following from Japanese to English: ""ここでは色々おかしなことが 本当に起こるんだ"""||Strange things did happen here|0.5034097|0.0|0.0|0.0|3.0|0.0
+260|"Translate the following from Japanese to English: ""- ファルコン？"""|"""Falcon?"""|- Falcon? - Yeah.|0.8629693|1.0|0.6666666666666666|1.0|2.0|0.0
+261|"Translate the following from Japanese to English: ""軍供給ラインは―"""||The army supply lines.|0.45946878|0.0|0.0|0.0|5.0|1.0
+262|"Translate the following from Japanese to English: ""マルセラ 警察に電話しろ"""|</answer|Marcella, call the police.|0.4684505|0.0|0.0|0.0|5.0|1.0
+263|"Translate the following from Japanese to English: ""どういうことなのか教えてくれないか？"""|""""|You gonna tell me what this is all about or what?|0.65349627|0.0|0.0|0.0|1.0|0.0
+264|"Translate the following from Japanese to English: ""いかがです？"""|"""What do you think of that?"""|What do you say to that?|0.84855026|1.0|0.6666666666666666|1.0|1.0|0.0
+265|"Translate the following from Japanese to English: ""（静流） あたし風景とかより こっちのほうが好きみたい"""|"""I like this side more than the landscape, it seems."""|I think I like these more than landscape.|0.83041877|1.0|0.5555555555555556|1.0|3.0|0.0
+266|"Translate the following from Japanese to English: ""私は独裁者の布教者なの"""||I'm the propagandist of a totalitarian dictatorship.|0.46555653|0.0|0.0|0.0|1.0|0.0
+267|"Translate the following from Japanese to English: ""メリーランドに着いた 今、ガソリンスタンドだ"""|</answer|I just landed in Maryland. I'm at a gas station.|0.46810088|0.0|0.0|0.0|3.0|0.0
+268|"Translate the following from Japanese to English: ""かわいくて 安っぽく 見えないのがいいな｡"""|"""It's nice when it's cute and doesn't look cheap and shabby and tacky and worn out, old, tattered, frayed, threadbare, dilapidated, decrepit, and dilapidated, worn out, shabby, tattered, frayed, threadbare, worn"|It should be cute but not look too cheap.|0.60833967|0.0|0.18604651162790695|0.0|3.0|0.0
+269|"Translate the following from Japanese to English: ""だから　話をしようと？"""|"""So, let"|Is that why you decided to take the floor?|0.51476|0.0|0.0|0.0|5.0|1.0
+270|"Translate the following from Japanese to English: ""今すぐ。"""|"""Right away"|Now.|0.856814|1.0|0.0|0.0|5.0|1.0
+271|"Translate the following from Japanese to English: ""夜間照明は中止だ"""||And let's stop lighting the thing at night.|0.40162855|0.0|0.0|0.0|1.0|0.0
+272|"Translate the following from Japanese to English: ""このカードはstimのクレジットのようなものです。"""|This card is like a|This card is like stim credits.|0.8335353|1.0|0.7272727272727272|1.0|3.0|0.0
+273|"Translate the following from Japanese to English: ""私に出来るのは エッタとの約束と計画の維持だけ"""|</|All I can do is just keep our promise to Etta and-and stick with the plan.|0.4232167|0.0|0.0|0.0|3.0|0.0
+274|"Translate the following from Japanese to English: ""彼女の顔を見た"""|"""She saw her face"|I can see that woman's face.|0.8408193|1.0|0.18181818181818182|0.0|3.0|0.0
+275|"Translate the following from Japanese to English: ""うちの近藤です ☎彼は もうすぐいなくなります"""|"""This is Kondo from our place ☎ He is about to disappear"""|Kondo from our office. He'll be gone soon.|0.8575218|1.0|0.39999999999999997|0.0|3.0|0.0
+276|"Translate the following from Japanese to English: ""泥にはまって 抜け出せなくなった"""|"""I was stuck in the mud and couldn't pull myself out."""|The silt on the bottom is like glue. You just sink in.|0.66790825|0.0|0.08333333333333333|0.0|1.0|0.0
+277|"Translate the following from Japanese to English: ""今まで 物がなくなったこと なんかないから..."""||They've never had anything go missing before so it's...|0.31759116|0.0|0.0|0.0|3.0|0.0
+278|"Translate the following from Japanese to English: ""- Servierはあなたを探していました。"""||-Servier've been looking for you.|0.42442012|0.0|0.0|0.0|4.0|1.0
+279|"Translate the following from Japanese to English: ""人を殺して評判を落とすことは 絶対にしない　特に女性はね それをぼくの顔にかける気？"""||He'd never ruin his reputation by killing anyone, especially a woman. Now, if you'd like to throw a drink in my face for that, be my guest.|0.31062144|0.0|0.0|0.0|1.0|0.0
+280|"Translate the following from Japanese to English: ""私がここに居ると誰が？"""||Did Charlie tell you I was here? Yeah.|0.32155523|0.0|0.0|0.0|1.0|0.0
+281|"Translate the following from Japanese to English: ""すでに線路は開通している"""|"The translation of ""すでに線路は開通している"" from Japanese to English is ""The railway line is already in operation."""|The line's operational.|0.6287635|0.0|0.31578947368421056|0.0|3.0|0.0
+282|"Translate the following from Japanese to English: ""値段を聞いてるの？"""||- What are your rates? - How much do I charge?|0.42053604|0.0|0.0|0.0|3.0|0.0
+283|"Translate the following from Japanese to English: ""そうする"""|"""So do"""|It can't hurt. All right.|0.53247887|0.0|0.0|0.0|1.0|0.0
+284|"Translate the following from Japanese to English: ""いや　彼は詐欺師じゃない"""||Well, he's not a fraud.|0.39852583|0.0|0.0|0.0|3.0|0.0
+285|"Translate the following from Japanese to English: ""キミの首に指を回して... . 胸に触れる..."""|"""Circling your"|I'd run my fingers down your neck... to your chest.|0.5275475|0.0|0.15384615384615385|0.0|4.0|1.0
+286|"Translate the following from Japanese to English: ""これはウソをついた分 これはその他の分"""|"""This is the part where I lied, and this is the part where I was truthful"|That's for the lies. And that's for everything else.|0.66355157|0.0|0.2222222222222222|0.0|2.0|0.0
+287|"Translate the following from Japanese to English: ""彼には　関心のある特定の仕事が何か？"""||Was there any particular business he was interested in?|0.3348555|0.0|0.0|0.0|4.0|1.0
+288|"Translate the following from Japanese to English: ""コード3を送信してもらえないか？"""|</answer|Can you call that in for me? Code three.|0.5485164|0.0|0.0|0.0|3.0|0.0
+289|"Translate the following from Japanese to English: ""娘はアンナに囚われてる 病気を植え付けられた"""|"The translation of the Japanese sentence ""娘はアンナに囚われてる 病気を植え付けられた"" to English is: ""My daughter is possessed by Anna and has been infected with a disease."" </"|Anna's holding her captive, she made her sick.|0.67896444|0.0|0.06451612903225805|0.0|2.0|0.0
+290|"Translate the following from Japanese to English: ""何と言った"""|"""What did you say?"""|What did you just say to him?|0.7839579|1.0|0.7272727272727273|1.0|4.0|1.0
+291|"Translate the following from Japanese to English: ""- いらないのか？"""|"""Do you not require it?"" </answer"|- Am I setting a place or not?|0.5592472|0.0|0.15384615384615383|0.0|1.0|0.0
+292|"Translate the following from Japanese to English: ""かわいそうと思うよ"""|"""I feel sorry"|Sorry you're down here.|0.68430364|0.0|0.25|0.0|1.0|0.0
+293|"Translate the following from Japanese to English: ""30年前だ、30年 モサドに3人の名前をリークした"""|30 years ago, I leaked the names of three people to Mossad.|30 years ago, I leaked three names to Mossad.|0.9906792|1.0|0.761904761904762|1.0|4.0|1.0
+294|"Translate the following from Japanese to English: ""トム ウォーカーを ""救う"" と"""||"""let's help Tom Walker""?"|0.5050771|0.0|0.0|0.0|5.0|1.0
+295|"Translate the following from Japanese to English: ""次の惑星や星には素晴らしいものがあった"""|"""There were wonderful things on the next planet or star"|Because just beyond the next planet, just beyond the next star... there would be something magnificent, something noble.|0.74202895|1.0|0.2857142857142857|0.0|3.0|0.0
+296|"Translate the following from Japanese to English: ""フランキー、モジョ出ろ ほら予定が詰まってるんだ"""|"""Frankie, show your mojo."|Frankie, Mojo, out! Come on, kiddo, we're on a schedule.|0.7580762|1.0|0.26666666666666666|0.0|4.0|1.0
+297|"Translate the following from Japanese to English: ""そこの警部なの"""||He's the captain there.|0.42143998|0.0|0.0|0.0|3.0|0.0
+298|"Translate the following from Japanese to English: ""- 彼等の埋葬の準備を、忙しいな"""|</answer|Get those graves dug.|0.4995807|0.0|0.0|0.0|1.0|0.0
+299|"Translate the following from Japanese to English: ""２人のイタリア人の 建築家が造った"""|"""Two Italian architects who built"""|CREDITED TO TWO ITALIAN ARCHITECTS.|0.84953624|1.0|0.6|1.0|4.0|1.0
+300|"Translate the following from Japanese to English: ""自分が弱いと思ってる"""|"""I think"|You feel weak.|0.51666003|0.0|0.0|0.0|4.0|1.0
+301|"Translate the following from Japanese to English: ""いつかこうなると分っていたの"""||My God. I knew this was going to happen.|0.4159327|0.0|0.0|0.0|1.0|0.0
+302|"Translate the following from Japanese to English: ""- 赤ちゃんが吐く。"""|The baby is vomiting.|- Baby spitting up.|0.6630963|0.0|0.28571428571428575|0.0|4.0|1.0
+303|"Translate the following from Japanese to English: ""本日あそこで 警察を呼ぶこともできた だが私のクライアントは 平穏な親権取引を 望んでいる"""||I could send the sheriff over there today and make you do it, but my client insists that we... handle the exchange of custody quietly.|0.33522847|0.0|0.0|0.0|4.0|1.0
+304|"Translate the following from Japanese to English: ""新しい一年に"""|"""The new year has come"" </answer"|Another round, birthday boy. ...or anything that might be out there listening.|0.6067605|0.0|0.0|0.0|1.0|0.0
+305|"Translate the following from Japanese to English: ""今回はこれだ 何をすればいいんだ"""|This time, this is the conclusion. What should I do? </|Now I'm losing this. What am I supposed to do, huh?|0.7092414|1.0|0.3636363636363636|0.0|1.0|0.0
+306|"Translate the following from Japanese to English: ""これで出来上がり・・・"""|"""This is the completed"|Pour la pièce de résistance.|0.5428927|0.0|0.0|0.0|1.0|0.0
+307|"Translate the following from Japanese to English: ""-どうする？"""|"""What's the state of the state of the state of the state of the state of the state of the state of the state of the state of the state of the state of the state of"|Don't shoot him again.|0.36285985|0.0|0.0|0.0|1.0|0.0
+308|"Translate the following from Japanese to English: ""ありがとう　ジョン ありがとう"""|Thank you, John|Thank you, John. Thank you.|0.93284786|1.0|0.7499999999999999|1.0|5.0|1.0
+309|"Translate the following from Japanese to English: ""自分でこれに けりをつけなければならない"""||I had to handle this myself.|0.45077023|0.0|0.0|0.0|2.0|0.0
+310|"Translate the following from Japanese to English: ""- それは無理です"""|That is impossible.|- No, I can't go around.|0.6245437|0.0|0.0|0.0|1.0|0.0
+311|"Translate the following from Japanese to English: ""グルメは得意じゃない"""|"""I am not experienced in gourmet food culture and experiences."""|Gourmet is not their forte.|0.7518054|1.0|0.13333333333333333|0.0|3.0|0.0
+312|"Translate the following from Japanese to English: ""赦しを求めに来たんだ"""||You're asking for forgiveness.|0.49526474|0.0|0.0|0.0|5.0|1.0
+313|"Translate the following from Japanese to English: ""- 私たちは、ソースの半マイルの範囲内にある場合。 - それを実行してください。"""|</|- If we're within half a mile of the source.|0.44211128|0.0|0.0|0.0|3.0|0.0
+314|"Translate the following from Japanese to English: ""なぜ逮捕されたの"""||- Arrested? For what? - I don't know.|0.38197747|0.0|0.0|0.0|1.0|0.0
+315|"Translate the following from Japanese to English: ""親切にも手伝ってくれた。"""||He was kind enough to help me.|0.42827502|0.0|0.0|0.0|5.0|1.0
+316|"Translate the following from Japanese to English: ""昨日 パパの ""礼拝"" を見て"""||Seeing you praying like that last night,|0.38665327|0.0|0.0|0.0|3.0|0.0
+317|"Translate the following from Japanese to English: ""僕について回ってる必要は　無いよ"""|</|You know, you don't have to stick around.|0.5201859|0.0|0.0|0.0|3.0|0.0
+318|"Translate the following from Japanese to English: ""- こんなオイシイ話ないわよ"""|There's no such good chance in the world, around here, or anywhere else, that I've heard of, and there's no way to get one, and there's no point in even trying, and it's not worth the effort, and it's not|Don't you want something better than this?|0.4709708|0.0|0.0|0.0|4.0|1.0
+319|"Translate the following from Japanese to English: ""君らは単独で"""|"""You all alone"" </answer"|You're going in alone.|0.70115167|1.0|0.4444444444444445|0.0|5.0|1.0
+320|"Translate the following from Japanese to English: ""君は悪い奴じゃないと思う"""|Seoul|I have nothing against you. You might not be a bad guy.|0.24964353|0.0|0.0|0.0|3.0|0.0
+321|"Translate the following from Japanese to English: ""私はその列車に間に合うようにタクシーに乗った。"""||I took a taxi so as to catch the train.|0.38687906|0.0|0.0|0.0|4.0|1.0
+322|"Translate the following from Japanese to English: ""雨宮は　俺が送ってくから"""|"""Yamamiya is the one"|I'll see her safely home.|0.50627905|0.0|0.0|0.0|1.0|0.0
+323|"Translate the following from Japanese to English: ""...身元確認が終わりました ...グルー博士ね"""|"""...The identity confirmation is over ...Dr. Glee"|Well, it appears you have cleared our background check, Dr Gru.|0.6056545|0.0|0.1111111111111111|0.0|4.0|1.0
+324|"Translate the following from Japanese to English: ""えぇ。"""|Yes.|Yeah.|0.867932|1.0|0.0|0.0|3.0|0.0
+325|"Translate the following from Japanese to English: ""ここは　アメリカ国外なんだ"""|""""|This morsel of foreign soil.|0.64520717|0.0|0.0|0.0|1.0|0.0
+326|"Translate the following from Japanese to English: ""ヨーダを見つけたぞ 遂にやった"""||Found our Yoda, looks like we did.|0.4529472|0.0|0.0|0.0|3.0|0.0
+327|"Translate the following from Japanese to English: ""緊急無線の件でクールソンが手助けを求めてるわ。"""|"""Coleson is asking for help regarding the emergency radio."""|Coulson needs help with the emergency transceiver.|0.83608514|1.0|0.375|0.0|4.0|1.0
+328|"Translate the following from Japanese to English: ""来たわよ マダム　ラロリー"""||We're here. Ah. Madame LaLaurie.|0.3813349|0.0|0.0|0.0|3.0|0.0
+329|"Translate the following from Japanese to English: ""それは私の物だ"""||That stuff's mine.|0.5219911|0.0|0.0|0.0|5.0|1.0
+330|"Translate the following from Japanese to English: ""生き残っているのは お前だけだ ゾンビに噛まれて"""|"""The only one left alive is you. You were bitten by a zombie."""|You're looking at the only human known to have survived being bitten by a zombie.|0.79971033|1.0|0.41379310344827586|0.0|4.0|1.0
+331|"Translate the following from Japanese to English: ""上官への反逆罪で逮捕するぞ"""|""""|We'll arrest you for opposing a superior officer.|0.45480862|0.0|0.0|0.0|4.0|1.0
+332|"Translate the following from Japanese to English: ""何も出て来んから 好きなだけ犬を調べろ"""|"""Since nothing is coming"|Swab my dogs all you want, 'cause you got nothing.|0.5223081|0.0|0.14285714285714288|0.0|1.0|0.0
+333|"Translate the following from Japanese to English: ""読んだのは詩です"""||Have you read that book to the workers who visited you?|0.42471445|0.0|0.0|0.0|1.0|0.0
+334|"Translate the following from Japanese to English: ""フォートドラムで ６ヶ月前に盗まれてたわ"""||Fort drum reported the theft of a radio package six months ago.|0.26666924|0.0|0.0|0.0|4.0|1.0
+335|"Translate the following from Japanese to English: ""三つ子の魂百までとは本当によく言ったものだ。"""|"""It is truly a wise saying that 'the spirit of triplets is worth a hundred.'"" </"|'The child is father to the man' is certainly well said.|0.61805135|0.0|0.23076923076923075|0.0|1.0|0.0
+336|"Translate the following from Japanese to English: ""本当にいいの？"""|"""Is it really alright with you?"" </answer"|What? You mean it?|0.7428576|1.0|0.18181818181818182|0.0|3.0|0.0
+337|"Translate the following from Japanese to English: ""彼らはゆっくり前進した。"""||They moved ahead slowly.|0.4299579|0.0|0.0|0.0|3.0|0.0
+338|"Translate the following from Japanese to English: ""すぐにでも..."""||As ready as I'll...|0.49189314|0.0|0.0|0.0|3.0|0.0
+339|"Translate the following from Japanese to English: ""(今野)　なんでしょう? お仕事中　申し訳ありません"""|</|Sorry to interrupt your work.|0.57741344|0.0|0.0|0.0|5.0|1.0
+340|"Translate the following from Japanese to English: ""秘密捜査は日が過ぎ 何か月も経った"""||Being undercover, the days turn into months.|0.41369122|0.0|0.0|0.0|3.0|0.0
+341|"Translate the following from Japanese to English: ""What's the trouble? い、いえ、なんでもありません。 いえ　なんでもありません Why, nothing at all..."""|"""What"|- Why, nothing at all...|0.57926196|0.0|0.0|0.0|3.0|0.0
+342|"Translate the following from Japanese to English: ""トムはショパンの大ファンだ。"""|</answer|Tom really likes Chopin.|0.4321898|0.0|0.0|0.0|5.0|1.0
+343|"Translate the following from Japanese to English: ""安い輸入品で市場が供給過剰になるだろう。"""||Cheap imports will glut the market.|0.31695145|0.0|0.0|0.0|5.0|1.0
+344|"Translate the following from Japanese to English: ""カトリックヨーロッパ全体のために？"""||For the whole of Catholic Europe?|0.40292233|0.0|0.0|0.0|3.0|0.0
+345|"Translate the following from Japanese to English: ""ジェニーには 昼間の仕事があったから"""||Jenny had a day job.|0.43099955|0.0|0.0|0.0|5.0|1.0
+346|"Translate the following from Japanese to English: ""それが偽物でもー"""|"""Even if it's a fake,"|Even if it turn out to be a fake|0.8924725|1.0|0.6666666666666667|1.0|4.0|1.0
+347|"Translate the following from Japanese to English: ""- ペニー"""|</|-Penny.|0.5901239|0.0|0.0|0.0|5.0|1.0
+348|"Translate the following from Japanese to English: ""本当に？"""|</answer|Really?|0.6107259|0.0|0.0|0.0|5.0|1.0
+349|"Translate the following from Japanese to English: ""- パイプを交換しないと"""|""""|- Inlet pipe needs replacing.|0.45286825|0.0|0.0|0.0|3.0|0.0
+350|"Translate the following from Japanese to English: ""特立したメディアから、率直なフィードバックを得ます。"""|</|We get honest feedback from independent media.|0.4586916|0.0|0.0|0.0|4.0|1.0
+351|"Translate the following from Japanese to English: ""うちのロビンも 私より好みが うるさいくらいなんですよ"""|"""My Robin is pickier than I am, to the"|My Robin is more fastidious than I.|0.8562242|1.0|0.6250000000000001|1.0|3.0|0.0
+352|"Translate the following from Japanese to English: ""置いて、そして、何かのポーズを取って"""|</|Put it down! Gently!|0.70605195|1.0|0.0|0.0|1.0|0.0
+353|"Translate the following from Japanese to English: ""- スイッチ? 相手が本当に マリアム・ハサンと思ってるの?"""|</|You don't really think this is about Maryam Hasan, do you?|0.54209405|0.0|0.0|0.0|4.0|1.0
+354|"Translate the following from Japanese to English: ""唯一向けられる 信頼に感謝します"""|I am grateful for the trust that is directed toward me.|Thank you for believing in me when no one else does.|0.7885322|1.0|0.18181818181818182|0.0|5.0|1.0
+355|"Translate the following from Japanese to English: ""どこの大学に行ったの"""||Where'd you go to college?|0.42710766|0.0|0.0|0.0|4.0|1.0
+356|"Translate the following from Japanese to English: ""ミスティもね"""|Misty also|She killed Misty, too.|0.7033371|1.0|0.3333333333333333|0.0|1.0|0.0
+357|"Translate the following from Japanese to English: ""やあ、スティーブ。 俺はJ -A"""|"""Hey, Steve. I am J-A."" </"|Hello, S.T.E.V.E., I am J-A-K, Jake.|0.8252467|1.0|0.4444444444444444|0.0|3.0|0.0
+358|"Translate the following from Japanese to English: ""私が彼女と結婚していたらよかったのに。"""|If I had married her, it would have been nice|Would that I had married her!|0.84045696|1.0|0.5|0.0|5.0|1.0
+359|"Translate the following from Japanese to English: ""絵もない本をよく読める"""|"""I can read books without images."""|How can you read this? There's no pictures.|0.7795812|1.0|0.26666666666666666|0.0|1.0|0.0
+360|"Translate the following from Japanese to English: ""-フランク・オーミノの所有だった"""|""""|- It was Frank Ormino.|0.4723352|0.0|0.0|0.0|1.0|0.0
+361|"Translate the following from Japanese to English: ""とうとう自由になったわ"""||We're finally free.|0.46636048|0.0|0.0|0.0|5.0|1.0
+362|"Translate the following from Japanese to English: ""＜そんな噂を聞いて 次は １年の この俺だと 一人 色めき立ったけど＞"""|"""After hearing such rumors, I, this one-year-old, perked up alone."""|Hearing such a rumor, I got all excited thinking that next would be me from the first year, but,|0.6781051|0.0|0.3225806451612903|0.0|4.0|1.0
+363|"Translate the following from Japanese to English: ""ただし、間に合わなかったら 置いてくぞ"""|"""However, if you can't"|Look if we're not that fully kicked, I am gonna leave in vain.|0.46509248|0.0|0.10526315789473682|0.0|1.0|0.0
+364|"Translate the following from Japanese to English: ""お前の売春宿もバーも レストランも麻薬取引もいつでも潰せるんだぞ"""||You realise we can shut down your whorehouses, your bars, restaurants, drug trade, whenever we choose.|0.29599684|0.0|0.0|0.0|4.0|1.0
+365|"Translate the following from Japanese to English: ""誰が対米テロの詳細を"""|"""Who provided details on the anti-US terrorism"""|Who does know the plan to attack America? Roya Hammad.|0.6462041|0.0|0.22222222222222224|0.0|2.0|0.0
+366|"Translate the following from Japanese to English: ""もういいよ"""|"""That's alright"" </answer"|- I'm not sweating anymore.|0.5750144|0.0|0.0|0.0|1.0|0.0
+367|"Translate the following from Japanese to English: ""バプテスマを授けておられます。みなあの方の方に行きます。"""|""""|Well, he is baptizing, and everyone is going to him.|0.4807049|0.0|0.0|0.0|2.0|0.0
+368|"Translate the following from Japanese to English: ""おれの命令に従え おれの言い分は ""ネズミに食わせろ""だ"""|"""Follow my command, my argument is 'give"|I'm running this squad now and I say we leave the gook for the mother-loving rats.|0.4694226|0.0|0.0|0.0|1.0|0.0
+369|"Translate the following from Japanese to English: ""５０代の白人男性　髪の色はグレー"""|"""A white man in his 50s, with hair that is a silvery-gray shade of silvery-gray shade of silvery-gray shade of silvery-gray shade of silvery-gray shade of silvery-gray"|Caucasian, male, 50s, grey-haired.|0.81352|1.0|0.10526315789473685|0.0|4.0|1.0
+370|"Translate the following from Japanese to English: ""ワインのことじゃないわ"""||I don't mean the wine, Dale.|0.41471842|0.0|0.0|0.0|1.0|0.0
+371|"Translate the following from Japanese to English: ""餌をあげるからよ"""|"""Come here, I'll give you food."""|They like you because you feed them.|0.689973|0.0|0.14285714285714285|0.0|2.0|0.0
+372|"Translate the following from Japanese to English: ""見ろよ　ブレーキの跡 ほら　吸い殻が　転がる"""||Look, the tire marks on the asphalt... and the cigarette butt rolling.|0.37850657|0.0|0.0|0.0|3.0|0.0
+373|"Translate the following from Japanese to English: ""- 履歴なしです"""|</answer|Zero results on the cross-check.|0.41746557|0.0|0.0|0.0|1.0|0.0
+374|"Translate the following from Japanese to English: ""誰かが兄貴から 守らないとダメだ"""|"""It's not okay if someone doesn't protect me from my older brother."""|Someone needs to protect him from you.|0.70976627|1.0|0.2857142857142857|0.0|3.0|0.0
+375|"Translate the following from Japanese to English: ""そう"""|"""Well, so"""|Yeah.|0.7425235|1.0|0.0|0.0|1.0|0.0
+376|"Translate the following from Japanese to English: ""何をやらかしたんだよ 今度は？"""|</answer|So, what did he do this time?|0.51393825|0.0|0.0|0.0|3.0|0.0
+377|"Translate the following from Japanese to English: ""独り言だよ"""|"""It's just my internal monologue."""|Talk... talking to myself a little bit.|0.79982924|1.0|0.0|0.0|3.0|0.0
+378|"Translate the following from Japanese to English: ""ミクスター先生．．．"""|</answer|Dr. Mixter...|0.536179|0.0|0.0|0.0|3.0|0.0
+379|"Translate the following from Japanese to English: ""- 他の物見ようよ"""|"""Let's go take a look"|- Can we watch something else?|0.6580279|0.0|0.0|0.0|5.0|1.0
+380|"Translate the following from Japanese to English: ""その決定は我々にとって不利だった。"""|The decision was not to our advantage|The decision was unfavourable to us.|0.9240913|1.0|0.6153846153846153|1.0|4.0|1.0
+381|"Translate the following from Japanese to English: ""すべてのスレッドを展開(P)"""||Expand All Threads|0.49745172|0.0|0.0|0.0|5.0|1.0
+382|"Translate the following from Japanese to English: ""私書箱は管理人が １ヶ月 現金払いでレンタルしたそうよ"""||So the P.O. Box the agency sent the headshots to was paid for in cash and rented for a month.|0.30487067|0.0|0.0|0.0|4.0|1.0
+383|"Translate the following from Japanese to English: ""ある日まで．．． あの日．．． あの文書が僕を現実へ引き戻した"""|"""Until a certain day"|Till one day that day that letter brought me back to earth.|0.60564965|0.0|0.125|0.0|4.0|1.0
+384|"Translate the following from Japanese to English: ""前より汚い仕事に なっていると思ってくれる？"""|"""Do you think it has become a job that"|Would you believe it's gotten even dirtier?|0.54577595|0.0|0.23529411764705882|0.0|3.0|0.0
+385|"Translate the following from Japanese to English: ""大した事してないわ"""||What I could. It wasn't much.|0.40200177|0.0|0.0|0.0|1.0|0.0
+386|"Translate the following from Japanese to English: ""女王は長旅だと存じており"""||Our queen knows it is a long journey.|0.42939728|0.0|0.0|0.0|4.0|1.0
+387|"Translate the following from Japanese to English: ""どうした　お化けが怖いのか ビビってんなよ"""||Afraid of the black man, you pansy?|0.40209758|0.0|0.0|0.0|1.0|0.0
+388|"Translate the following from Japanese to English: ""スティーブ ジョンです"""|I am Steve John|- Steve, it's me, it's John.|0.834839|1.0|0.36363636363636365|0.0|3.0|0.0
+389|"Translate the following from Japanese to English: ""でも 熱には弱かったわ."""|But I was not able|But it was vulnerable to heat.|0.48281786|0.0|0.3636363636363636|0.0|1.0|0.0
+390|"Translate the following from Japanese to English: ""エバがストーカーに使ったの"""|"""Eva used it on the stalker"""|Eva unloaded half a can on the guy who was supposedly following her.|0.70256436|1.0|0.3157894736842105|0.0|4.0|1.0
+391|"Translate the following from Japanese to English: ""もちろん、君にしてもらっても 私は感謝しないがね... 君がモナコで ジョーダンにした事"""|Of course, I wouldn|Of course, I would not appreciate your doing to me what you did to Jordan at Monaco.|0.48264226|0.0|0.2857142857142857|0.0|4.0|1.0
+392|"Translate the following from Japanese to English: ""彼らは僕なしでも"""||They can handle things fine without me.|0.40619025|0.0|0.0|0.0|3.0|0.0
+393|"Translate the following from Japanese to English: ""やらなきゃならないの"""|"""I have to do it"|I have to do my job without it.|0.76132345|1.0|0.7692307692307693|1.0|3.0|0.0
+394|"Translate the following from Japanese to English: ""サイモン　ボストンを閉鎖です"""|"""Simon Boston is closed."""|Simon, the city's Boston; have them shut it down.|0.80648005|1.0|0.28571428571428575|0.0|2.0|0.0
+395|"Translate the following from Japanese to English: ""- パトリックが世話してくれた"""|"""Patrick took care"|Patrick took care of me.|0.90605366|1.0|0.7499999999999999|1.0|5.0|1.0
+396|"Translate the following from Japanese to English: ""覚えているわ あのときに会ったビッチね さらにビッチになってるわ"""|"""I remember that bitch I met back then, and she's become even more of"|You know, I met you before and you were a bitch then, and you're even a bigger bitch now.|0.7669624|1.0|0.28571428571428575|0.0|4.0|1.0
+397|"Translate the following from Japanese to English: ""北エレベーター−１０分"""|"""North Elevator - 10 minutes"""|NORTH ELEVATORS - 10 MINS|0.90006626|1.0|0.75|1.0|4.0|1.0
+398|"Translate the following from Japanese to English: ""ちょっと待ってくれ"""|"""A moment, please"""|I thought I'd just take it.|0.56237566|0.0|0.0|0.0|1.0|0.0
+399|"Translate the following from Japanese to English: ""でも成果を 上げたわ"""|"""But I"|Yeah, but look at what she has achieved.|0.41657186|0.0|0.2|0.0|1.0|0.0
+400|"Translate the following from Japanese to English: ""結婚するためですよ 2回目のデートだっけ？"""|</|I've been trying to get her to marry me since, what, our second date?|0.39919928|0.0|0.0|0.0|4.0|1.0
+401|"Translate the following from Japanese to English: ""我々のサッカーチームは、町の全チームを負かした。"""|Our soccer team was the most spirited team in the town. </|Our soccer team beat all the other teams in the town.|0.7927225|1.0|0.7272727272727273|1.0|5.0|1.0
+402|"Translate the following from Japanese to English: ""増資するとか"""|""""|Offer more money.|0.58186805|0.0|0.0|0.0|1.0|0.0
+403|"Translate the following from Japanese to English: ""私には分らんが 外の奴等が 火星に車を送れるなら きっと方法を見つけてくれるでしょう"""|</|Well, I don't know, but if those eggheads out there can drop a car on Mars, they sure as hell can figure this out, too.|0.37285265|0.0|0.0|0.0|1.0|0.0
+404|"Translate the following from Japanese to English: ""パーティー 欠席するわけには いきませんか？"""|"""Can I not"|Would it be all right if I don't attend the party?|0.66376656|0.0|0.13333333333333333|0.0|4.0|1.0
+405|"Translate the following from Japanese to English: ""ＦＢＩのダンハム捜査官です"""|FBI Agent Danham </|Agent Dunham, F.B.I.|0.85275394|1.0|0.25|0.0|4.0|1.0
+406|"Translate the following from Japanese to English: ""- 今のままでは無理だな"""|"""It"|- You shouldn't work in your condition.|0.42027783|0.0|0.0|0.0|1.0|0.0
+407|"Translate the following from Japanese to English: ""見ろ　どうだ？"""|""""|Show them your tits. Look, you like them?|0.52156985|0.0|0.0|0.0|1.0|0.0
+408|"Translate the following from Japanese to English: ""そこまで怒らなかったですね 僕たちも"""|"""You weren't that upset with us, were you?"""|Yeah, then I'd even forget my anger.|0.47615963|0.0|0.0|0.0|5.0|1.0
+409|"Translate the following from Japanese to English: ""いや いいかな"""|""""|No, I'll pass|0.70727164|1.0|0.0|0.0|1.0|0.0
+410|"Translate the following from Japanese to English: ""ただし、x = 空白: エラーなし"""|However, x = blank: no error|x [SQLSTATE = aa bbb SQLCODE=cccc]|0.5208075|0.0|0.1818181818181818|0.0|1.0|0.0
+411|"Translate the following from Japanese to English: ""仲間は信用できる"""|Companions/trustworthy people </answer|And let me assure you they are substantial...|0.48026294|0.0|0.0|0.0|1.0|0.0
+412|"Translate the following from Japanese to English: ""（山里）そう ついに あの 全く動かなかった男アーマンが"""||And finally, the immobile Arman...|0.44531476|0.0|0.0|0.0|3.0|0.0
+413|"Translate the following from Japanese to English: ""- 彼には　お金もIDもなさそうだった"""||- It's not like he has any money or ID.|0.36181217|0.0|0.0|0.0|4.0|1.0
+414|"Translate the following from Japanese to English: ""本当に神の裁きと考えたいほどだ..."""|"""It's"|that this is really divine judgement.|0.52060235|0.0|0.0|0.0|3.0|0.0
+415|"Translate the following from Japanese to English: ""君は　俺たちのことが好きだから 俺たちを助けてるんじゃない"""|"""You're helping"|You don't help us because you like us.|0.5945626|0.0|0.3333333333333333|0.0|5.0|1.0
+416|"Translate the following from Japanese to English: ""時間の無駄さ 言う事は何も無い"""|"""There's no point in"|You're wasting your time. I have nothing to say.|0.7185568|1.0|0.0|0.0|5.0|1.0
+417|"Translate the following from Japanese to English: ""彼女の魂が休まることはない 適切に墓地へ埋葬しないと"""||Her spirit can't rest until it's been properly interred in the cemetery.|0.34053937|0.0|0.0|0.0|4.0|1.0
+418|"Translate the following from Japanese to English: ""おかげでこっちまで 気分が悪くなった"""|</|I... Wow. Well, you're not making me feel great.|0.48932546|0.0|0.0|0.0|1.0|0.0
+419|"Translate the following from Japanese to English: ""アンサリードを動かしているのは もっと大きなものだ"""||The Unsullied will be fighting for something greater.|0.41217786|0.0|0.0|0.0|5.0|1.0
+420|"Translate the following from Japanese to English: ""どの様な内容の本なの？"""||- How do you market you get it?|0.35900906|0.0|0.0|0.0|1.0|0.0
+421|"Translate the following from Japanese to English: ""酸素 頼む ― はい"""|"""O"|Oxygen! - Yes!|0.67851937|0.0|0.0|0.0|1.0|0.0
+422|"Translate the following from Japanese to English: ""すみません 失礼な言い方をしました"""||I'm sorry, wrong choice of words.|0.47490978|0.0|0.0|0.0|1.0|0.0
+423|"Translate the following from Japanese to English: ""キップは　どう？"""||What about Kip?|0.48261508|0.0|0.0|0.0|1.0|0.0
+424|"Translate the following from Japanese to English: """"あいつはどこに居る?"""""|</answer|Where is he?|0.5833056|0.0|0.0|0.0|3.0|0.0
+425|"Translate the following from Japanese to English: ""この殺人によって ウィル・グレアムの事件に"""|</|This murder raises serious doubts about|0.44419184|0.0|0.0|0.0|3.0|0.0
+426|"Translate the following from Japanese to English: ""死ぬ前に一度だけでも？ 暖かくて"""|"""Before I die,"|At least once... before you die? Does it feel like a warm, wet... hug?|0.55366594|0.0|0.23529411764705882|0.0|2.0|0.0
+427|"Translate the following from Japanese to English: ""- OK 俺はスーパースパイだ"""|"""OK, I am a"|-Okay I'm a superspy|0.70862466|1.0|0.4444444444444445|0.0|4.0|1.0
+428|"Translate the following from Japanese to English: ""その国の文明は進歩した。"""|</answer|The country's civilization has advanced.|0.48315006|0.0|0.0|0.0|5.0|1.0
+429|"Translate the following from Japanese to English: ""母さんがやったんじゃない"""|</|That's not what Mom did.|0.56958926|0.0|0.0|0.0|5.0|1.0
+430|"Translate the following from Japanese to English: ""もっとアタマを使うのよ"""|"""Use your brain more"" </"|I think you could be smarter.|0.7042542|1.0|0.0|0.0|1.0|0.0
+431|"Translate the following from Japanese to English: ""売春婦は真実を話してた"""|</|So, the prostitute was telling the truth.|0.43290168|0.0|0.0|0.0|3.0|0.0
+432|"Translate the following from Japanese to English: ""人間がそう言うなら。"""|"""If humans say so"|If humans say so.|0.91431534|1.0|1.0|1.0|5.0|1.0
+433|"Translate the following from Japanese to English: ""奴の居そうな場所を 教えてくれ"""|""""|Just tell me where he's gonna be.|0.5052722|0.0|0.0|0.0|1.0|0.0
+434|"Translate the following from Japanese to English: ""おまえは「彼」と言った。 「彼」の仕業だと言った。"""|"""You said 'him'. You said it was his doing"|"You said ""him."" you said it was him."|0.8734301|1.0|0.823529411764706|1.0|4.0|1.0
+435|"Translate the following from Japanese to English: ""今　助けてあげる"""||It's all right. Shhh.|0.5171908|0.0|0.0|0.0|1.0|0.0
+436|"Translate the following from Japanese to English: ""入るぞ オレの手を見せる　いいか？"""|"""I'm going to show you my hand, got it"|I'm coming in, it's just me, I'm gonna show you my hands, alright?|0.8639822|1.0|0.4615384615384615|0.0|4.0|1.0
+437|"Translate the following from Japanese to English: ""※どこにいるのかと思ったよ..."""||♪ How I wonder where you're at ♪|0.42889306|0.0|0.0|0.0|1.0|0.0
+438|"Translate the following from Japanese to English: ""一方、仕事を継続 大規模な開発に。"""||Meanwhile, work progressed on the massive development.|0.3924416|0.0|0.0|0.0|4.0|1.0
+439|"Translate the following from Japanese to English: ""スパイにはスパイを..."""||Takes a mole to catch a mole.|0.5414441|0.0|0.0|0.0|1.0|0.0
+440|"Translate the following from Japanese to English: ""彼はとても速く歩いたので、私はついていけなかった。"""||He walked so fast this I couldn't keep up with him.|0.392515|0.0|0.0|0.0|4.0|1.0
+441|"Translate the following from Japanese to English: ""家電事故だわ"""||So it was an electrical fire.|0.44817305|0.0|0.0|0.0|3.0|0.0
+442|"Translate the following from Japanese to English: ""帰る前に　僕の新ネタを"""|"""Before I go"|Wait. Before you go. I'm working on something new.|0.62106967|0.0|0.30769230769230765|0.0|4.0|1.0
+443|"Translate the following from Japanese to English: ""素敵・・・"""|"""Niseki..."""|I... like it...|0.6404086|0.0|0.0|0.0|1.0|0.0
+444|"Translate the following from Japanese to English: ""私は半分アイルランド人 半分ユダヤ人..."""|</answer|I'm half-lrish, half-Jewish...|0.45126808|0.0|0.0|0.0|1.0|0.0
+445|"Translate the following from Japanese to English: ""行く前に、いくつかのことを言っておきたい。"""|</answer|I have to finalize a few things before we go.|0.48141187|0.0|0.0|0.0|5.0|1.0
+446|"Translate the following from Japanese to English: ""トムは恐らくついて行きたがらないだろう。"""|Tom probably doesn't want to follow us along with us along with us along with us along with us along with us along with us along with us along with us along with us along with us along with us along with us along with us|Tom probably won't want to tag along.|0.874234|1.0|0.2181818181818182|0.0|3.0|0.0
+447|"Translate the following from Japanese to English: ""十戒からね"""|"""From the Ten"|Start with the first ten.|0.7552682|1.0|0.5|0.0|1.0|0.0
+448|"Translate the following from Japanese to English: ""医師達は癌との戦いで大躍進を遂げた。"""||Doctors have made great strides in their fight against cancer.|0.4072997|0.0|0.0|0.0|5.0|1.0
+449|"Translate the following from Japanese to English: ""♪この愛でドアを開けて みよう・・"""||♪ Let my love open the door... ♪|0.3844387|0.0|0.0|0.0|5.0|1.0
+450|"Translate the following from Japanese to English: ""でも　実際に列車が遅れました 2つ目は"""||Actually, my train was late.|0.4210827|0.0|0.0|0.0|5.0|1.0
+451|"Translate the following from Japanese to English: ""謝りたいわ　彼女にじゃなく あなたにね"""||I wanted to apologise. Not to her - to you.|0.3925598|0.0|0.0|0.0|3.0|0.0
+452|"Translate the following from Japanese to English: ""よっし、よっし。"""|"""Yoshi, yoshi."""|See, I'm flesh and blood, just like you.|0.57295924|0.0|0.0|0.0|1.0|0.0
+453|"Translate the following from Japanese to English: ""路上で　アクシデントよ"""||On the street, by accident.|0.47133484|0.0|0.0|0.0|4.0|1.0
+454|"Translate the following from Japanese to English: ""罪は償った..."""|"""The sin has been atoned for..."""|I paid for that. I paid for that.|0.6431941|0.0|0.14285714285714288|0.0|1.0|0.0
+455|"Translate the following from Japanese to English: ""それまでは私は信じない"""|"""Until then"|Until then,I am not so convinced. Now can you handle that?|0.6706492|0.0|0.2857142857142857|0.0|3.0|0.0
+456|"Translate the following from Japanese to English: ""カメラは ベビーベッドからの様子を"""|"The translation of ""カメラは ベビーベッドからの様子を"" from Japanese to English is ""The camera is showing the scene from the baby's bed."" </"|I'd like to be sure. Case has been signed.|0.35748473|0.0|0.06896551724137931|0.0|1.0|0.0
+457|"Translate the following from Japanese to English: ""i've figured something out 私 何かを見積もった"""|"""I've figured"|I've figured something out.|0.903878|1.0|0.7499999999999999|1.0|5.0|1.0
+458|"Translate the following from Japanese to English: ""事務長が会ってくれる"""||The administrator can see us now.|0.5073085|0.0|0.0|0.0|3.0|0.0
+459|"Translate the following from Japanese to English: ""幸せな頃の思い出なの"""|</answer|Memories of what life used to be.|0.5479676|0.0|0.0|0.0|5.0|1.0
+460|"Translate the following from Japanese to English: ""救命措置は　とられていません"""||No attempts to revive her were made.|0.3543824|0.0|0.0|0.0|5.0|1.0
+461|"Translate the following from Japanese to English: ""薬剤の合成を可能とした それは中和し、逆戻りさせる 生理学的効果だ"""|"It translates to: ""It is a physiological effect that enables the synthesis of drugs, neutralizing and reversing them."""|I was able to synthesize a solution that counteracts, reverses the physiological effects that exposure to Mirakuru produces.|0.6433722|0.0|0.2777777777777778|0.0|4.0|1.0
+462|"Translate the following from Japanese to English: ""その調子..."""|"""That's the way to do"|Now keep that...|0.6343138|0.0|0.2222222222222222|0.0|1.0|0.0
+463|"Translate the following from Japanese to English: ""怪我して助けを求めてた。"""|</answer|Why did you let him in our home? He was hurt. He called for help.|0.42806095|0.0|0.0|0.0|2.0|0.0
+464|"Translate the following from Japanese to English: ""だけど本当に親密になりたいときは 家でネットフリックスを見るんだよ あんたとジェシーはいつも一緒に ずっと家に居て"""|But when you really want to get close, we watch Netflix at home. You and Jesse always stay together, always at home.|Normally when you go on a date with a girl, you'd take her to the theater to watch a movie, but when you're— when you're truly comfortable with someone, you stay at home and watch Netflix. Like, you and Jessie would probably stay at home together all the time, watching movies.|0.76311105|1.0|0.28947368421052627|0.0|4.0|1.0
+465|"Translate the following from Japanese to English: ""あんた、いつも俺を前にしてるな 軍の訓練だろ？"""|You're always standing in front of me, aren't you? Is that military training?|You always keep me in front of you. Military training, right?|0.898742|1.0|0.6153846153846153|1.0|4.0|1.0
+466|"Translate the following from Japanese to English: ""第1段階の患者だ"""||This patient is at stage 1.|0.4411002|0.0|0.0|0.0|5.0|1.0
+467|"Translate the following from Japanese to English: ""それはあなたに とって辛いものでしょう"""|"""That must be a bitter thing for you."""|That must be very painful for you.|0.8798508|1.0|0.6666666666666666|1.0|5.0|1.0
+468|"Translate the following from Japanese to English: ""ちゃんと娘を探してくれ"""|""""|You should be looking for our daughter.|0.577624|0.0|0.0|0.0|3.0|0.0
+469|"Translate the following from Japanese to English: ""アア　戻って来て嬉しい ミスター・リース"""|373.15|Ah, welcome back, Mr. Reese.|0.39948112|0.0|0.0|0.0|5.0|1.0
+470|"Translate the following from Japanese to English: ""- バンクストンはここで何してる？"""||What is the Bankston doing here?|0.4352503|0.0|0.0|0.0|3.0|0.0
+471|"Translate the following from Japanese to English: ""彼を追って オーウェン島へきたんだ"""|He|Followed him out here to Owen Island.|0.5096476|0.0|0.0|0.0|4.0|1.0
+472|"Translate the following from Japanese to English: ""君は僕を殺せないよ"""|You can't kill me|I don't think you're going to kill me.|0.67761445|0.0|0.4|0.0|4.0|1.0
+473|"Translate the following from Japanese to English: ""私が そんなポーズしたら 大変なことになるわよ？"""||There would be big trouble if I struck that pose.|0.448418|0.0|0.0|0.0|4.0|1.0
+474|"Translate the following from Japanese to English: ""戦さは無理だ!"""|"""Fighting"|We cannot fight!|0.6618236|0.0|0.5|0.0|5.0|1.0
+475|"Translate the following from Japanese to English: ""♪ sun ain't gonna shine anymore ♪"""|"""♪ The sun ain't gonna shine anymore"|♪ sun ain't gonna shine anymore ♪|0.91180354|1.0|0.923076923076923|1.0|1.0|0.0
+476|"Translate the following from Japanese to English: ""おはよう、ブレントさん"""|Good morning, Brent.|Good morning, Miss Brent.|0.8692792|1.0|0.8571428571428571|1.0|4.0|1.0
+477|"Translate the following from Japanese to English: ""フライト訓話、地獄篇"""|Flight Training, Inferno Chapter|The flight cautionary tale from hell. Didn't they have some kind of hypersleep malfunction?|0.5665992|0.0|0.10526315789473685|0.0|2.0|0.0
+478|"Translate the following from Japanese to English: ""ここは眠らない街だと思った"""||Thought this was the city that never sleeps.|0.43491498|0.0|0.0|0.0|3.0|0.0
+479|"Translate the following from Japanese to English: ""塀の向う側のりんごは一番おいしい。"""|The apples on the other side of the fence are the most l|The apples on the other side of the wall are the sweetest.|0.84908473|1.0|0.8|1.0|4.0|1.0
+480|"Translate the following from Japanese to English: ""他人にラマーズ法を 頼むことになるわね"""|"""I will end"|One of these days, I'll get me one of those husbands that show up for Lamaze.|0.4694065|0.0|0.1|0.0|1.0|0.0
+481|"Translate the following from Japanese to English: ""あの方が嫌いなの？"""||-Sounds like you don't like him.|0.39582604|0.0|0.0|0.0|3.0|0.0
+482|"Translate the following from Japanese to English: ""どのくらい経った？"""||How long has it been?|0.47725794|0.0|0.0|0.0|5.0|1.0
+483|"Translate the following from Japanese to English: ""キャリー！ キャリー？ おーい？"""|"""Hey!"|Carrie! Carrie? Hello?|0.7194436|1.0|0.0|0.0|3.0|0.0
+484|"Translate the following from Japanese to English: ""我々の時代からで もう古着なんだ"""||They were old then.|0.4221405|0.0|0.0|0.0|2.0|0.0
+485|"Translate the following from Japanese to English: ""三つ目のリールはスプールにセットした。"""|</|The third one is on the spool.|0.5644291|0.0|0.0|0.0|3.0|0.0
+486|"Translate the following from Japanese to English: ""おい""夢マシーン""？"""|"""Hey"" Dream Machine""?"|Hey, dream machine.|0.72801435|1.0|1.0|1.0|5.0|1.0
+487|"Translate the following from Japanese to English: ""動かせ　動かせ 止めるな"""|"""Move,"|- Take it, girls! Take it! That's it, girls.|0.48378378|0.0|0.0|0.0|1.0|0.0
+488|"Translate the following from Japanese to English: ""フォード博士に最重要のメッセージを"""|"""The most important message for Dr. Ford"""|System, locate Dr. Ford for me. Send him a message, highest priority.|0.7456232|1.0|0.2105263157894737|0.0|3.0|0.0
+489|"Translate the following from Japanese to English: ""私の尻を押してくれ いいぞ！"""|"""Push my butt,"|-That's retreat, hell! -That's right.|0.4193038|0.0|0.0|0.0|1.0|0.0
+490|"Translate the following from Japanese to English: ""あなたが２人を殺したのよ！"""||You killed them! Don't you understand me?|0.40844476|0.0|0.0|0.0|4.0|1.0
+491|"Translate the following from Japanese to English: ""おそらく？"""||It's possible?|0.5414887|0.0|0.0|0.0|5.0|1.0
+492|"Translate the following from Japanese to English: ""落ちつけ"""|Calm down|Penny, calm down.|0.83611035|1.0|0.8|1.0|1.0|0.0
+493|"Translate the following from Japanese to English: ""天井には大きなシャンデリアが輝いている"""|The chandelier is shining brightly on the ceiling.|And hang up from the ceiling a big, old crystal chandelier.|0.76324916|1.0|0.2105263157894737|0.0|2.0|0.0
+494|"Translate the following from Japanese to English: ""家に帰ったら家にいるわ"""|"""When I get home, I'll be at home."""|I'll be home when I'm home.|0.88992447|1.0|0.47058823529411764|0.0|3.0|0.0
+495|"Translate the following from Japanese to English: ""こちら クロードよ"""|"""This is Claude"""|Hello. Dad, Janice, meet Claude.|0.7703255|1.0|0.25|0.0|2.0|0.0
+496|"Translate the following from Japanese to English: ""あなたも　ごきげんよう"""|"""Hello, how are you?"""|You,too. Have a good one.|0.5010376|0.0|0.2|0.0|3.0|0.0
+497|"Translate the following from Japanese to English: ""マクラ何個あるの？"""|How|how many pillows is that?|0.6643974|0.0|0.33333333333333337|0.0|1.0|0.0
+498|"Translate the following from Japanese to English: ""「なせばなる」って"""||It was built, and they came.|0.40869498|0.0|0.0|0.0|1.0|0.0
+499|"Translate the following from Japanese to English: ""（達也）俺はね すごいソフト （光る）ふーん"""|"""Taiga, I'm"|-I'm super sweet.|0.52312005|0.0|0.5714285714285715|1.0|1.0|0.0
