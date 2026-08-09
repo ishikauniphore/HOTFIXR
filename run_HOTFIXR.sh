@@ -1,7 +1,7 @@
 export VLLM_USE_V1=0
-DATASET="HFTester"
-MODEL_NAME="Qwen/Qwen2.5-3B-Instruct"
-MODEL_SHORTHAND="qwen14bins"
+DATASET="nemotron"
+MODEL_NAME="Qwen/Qwen2.5-7B-Instruct"
+MODEL_SHORTHAND="qwen7bins"
 
 
 ### STEP 1: Acquisition training
@@ -29,10 +29,10 @@ torchrun --nproc_per_node=4 sft.py \
     --file_name "/home/ubuntu/HOTFIXR/training_data/${MODEL_SHORTHAND}_${DATASET}_${REWARD}.parquet"
 py merge.py --model_path "/dev/shm/sft_models/${MODEL_SHORTHAND}_${DATASET}_${REWARD}" --base_model "${MODEL_NAME}"
 
-source run_eval.sh "ishikauniphore/student_${MODEL_SHORTHAND}_${DATASET}_${REWARD}"
+source run_eval.sh "${HF_USERNAME}/student_${MODEL_SHORTHAND}_${DATASET}_${REWARD}"
 cd ..
 
-notify "experiment done!!!! 0_0 ${MODEL_SHORTHAND}_${DATASET}_${REWARD}"
+notify "experiment done: ${MODEL_SHORTHAND}_${DATASET}_${REWARD}"
 
 export CUDA_VISIBLE_DEVICES=0,1,2,3
 source keep_alive.sh

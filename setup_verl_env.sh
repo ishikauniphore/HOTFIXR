@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+# If there are any issues regarding CUDA, please check out the CUDA_802_FIX.md file for help.
+
 ENV_NAME="verl"
 PYTHON_VERSION="3.12"
 
