@@ -9,7 +9,6 @@ REWARD="lingualdeficit"
 rm -rf /dev/shm/grpo_synthesis_models
 GRPO_KWARGS="{\"model_name\": \"${MODEL_NAME}\", \"dataset_name\": \"/home/ubuntu/HOTFIXR/data/${DATASET}/train.parquet\"}"
 source run_verl.sh "${MODEL_NAME}" "rewards/${REWARD}.py" "${MODEL_SHORTHAND}_${DATASET}_${REWARD}" "${DATASET}" "${REWARD}" "$GRPO_KWARGS"
-notify "${MODEL_SHORTHAND}_${DATASET}_${REWARD} model is trained"
 
 
 export CUDA_VISIBLE_DEVICES=0,1,2,3
@@ -31,8 +30,6 @@ py merge.py --model_path "/dev/shm/sft_models/${MODEL_SHORTHAND}_${DATASET}_${RE
 
 source run_eval.sh "${HF_USERNAME}/student_${MODEL_SHORTHAND}_${DATASET}_${REWARD}"
 cd ..
-
-notify "experiment done: ${MODEL_SHORTHAND}_${DATASET}_${REWARD}"
 
 export CUDA_VISIBLE_DEVICES=0,1,2,3
 source keep_alive.sh

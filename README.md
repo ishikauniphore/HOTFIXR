@@ -10,6 +10,12 @@ Please refer to `run_HOTFIXR.sh`. It has the detailed commands laid out, with al
 # Running HOTFIXR via Python
 For a more cleaner abstraction, you can also use the HOTFIXR API as shown in `run_HOTFIXR.py`. Note, this file assumed 8 NVIDIA A100's (equivalent to a p4d.24xlarge on Duplo Cloud), but can be easily customized.
 
+After cloning the repo, install the HOTFIXR package by:
+
+```
+cd /home/ubuntu/HOTFIXR && pip install -e .
+```
+
 NOTE: This is a bit of an unclean implementation, whenever a path or filename is required, please provide the full path of where to store that path/file.
 
 # Push notifications when your experiment is finished
@@ -19,4 +25,10 @@ GRPO experiments can take a long time! Instead of waiting to find out when it is
 notify() {
   curl -s -d "${1:-done}" ntfy.sh/[YOUR UNIQUE CODE HERE]
 }
+```
+
+Next, put this command at the end of your bash scripts:
+
+```
+notify "experiment finished"
 ```
