@@ -5,11 +5,16 @@ import time
 from .config import REPO_ROOT
 
 
-def ensure_reward_service_running(port=5145, startup_timeout=180, dry_run=False):
+def ensure_reward_service_running(port=5145, startup_timeout=180, dry_run=False,
+                                   cuda_visible_devices=None):
     """Make sure services/all.py's FastAPI reward server is up on `port`,
     starting it as a detached background process if it isn't already
     running. Replaces having to separately `source run_services.sh` in
     another terminal before calling train_generator().
+
+    `cuda_visible_devices` pins the GPUs the service subprocess sees,
+    independent of whatever CUDA_VISIBLE_DEVICES the training run (verl)
+    uses; defaults to services/all.py's own default ("6,7") if unset.
     """
     import requests
 
@@ -25,7 +30,8 @@ def ensure_reward_service_running(port=5145, startup_timeout=180, dry_run=False)
             print(f"[dry_run] reward service already running on port {port}")
         else:
             print(f"[dry_run] would start reward service in the background: "
-                  f"python services/all.py")
+                  f"python services/all.py "
+                  f"(CUDA_VISIBLE_DEVICES={cuda_visible_devices!r})")
         return
 
     if is_up():
@@ -33,6 +39,8 @@ def ensure_reward_service_running(port=5145, startup_timeout=180, dry_run=False)
 
     server_env = os.environ.copy()
     server_env.setdefault("SERVER_IP", "0.0.0.0")
+    if cuda_visible_devices is not None:
+        server_env["CUDA_VISIBLE_DEVICES"] = cuda_visible_devices
     log_path = REPO_ROOT / "services" / "server.log"
     log_file = open(log_path, "a")
     subprocess.Popen(

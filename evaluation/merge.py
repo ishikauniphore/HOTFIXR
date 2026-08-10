@@ -5,19 +5,19 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--model_path", type=str, required=True, help="Path to the fine-tuned adapter/model")
-parser.add_argument("--base_model", type=str, required=True, help="Path to the fine-tuned adapter/model")
+parser.add_argument("--base_student_model", type=str, required=True, help="Path to the fine-tuned adapter/model")
 parser.add_argument("--skip_push", action="store_true", help="Skip pushing the merged model to the HF Hub")
 args = parser.parse_args()
 
-base_model_name = args.base_model
+base_student_model = args.base_student_model
 adapter_path = args.model_path
 merged_path = args.model_path
 
-model = AutoModelForCausalLM.from_pretrained(base_model_name, torch_dtype="auto")
+model = AutoModelForCausalLM.from_pretrained(base_student_model, torch_dtype="auto")
 model = PeftModel.from_pretrained(model, adapter_path)
 model = model.merge_and_unload()
 
-tokenizer = AutoTokenizer.from_pretrained(base_model_name)
+tokenizer = AutoTokenizer.from_pretrained(base_student_model)
 
 model.save_pretrained(merged_path)
 tokenizer.save_pretrained(merged_path)

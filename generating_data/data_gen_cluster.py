@@ -257,7 +257,7 @@ def main():
     )
     parser.add_argument("--dataset_name", type=str, default="nemotron_stem",
                         help="Path to seed parquet dataset.")
-    parser.add_argument("--acquisition_model_name", type=str, default="ishikauniphore/generator_3bT-7bS-v3_nemotron_stem_mcot",
+    parser.add_argument("--question_generation_model", type=str, default="ishikauniphore/generator_3bT-7bS-v3_nemotron_stem_mcot",
                         help="HuggingFace model name used for question generation.")
     parser.add_argument("--answer_model_name", type=str, default="Qwen/Qwen2.5-7B-Instruct",
                         help="HuggingFace model name used for answer generation. Defaults to --model_name.")
@@ -280,17 +280,17 @@ def main():
 
     if args.output_file:
         output_file = args.output_file
-    elif "acquisition" in args.acquisition_model_name:
+    elif "acquisition" in args.question_generation_model:
         output_file = (TRAINING_DATA_DIR,
-                       f"AS_{args.acquisition_model_name.split('/')[-1]}_{args.dataset_name}_{args.size}.csv")
+                       f"AS_{args.question_generation_model.split('/')[-1]}_{args.dataset_name}_{args.size}.csv")
     else:
         output_file = (TRAINING_DATA_DIR,
-                       f"Base_{args.acquisition_model_name.split('/')[-1]}_{args.dataset_name}_{args.size}.csv")
+                       f"Base_{args.question_generation_model.split('/')[-1]}_{args.dataset_name}_{args.size}.csv")
 
     # if not os.path.exists(output_file):
     if args.questions_file is None:
         print("=== Step 1: Generating questions ===")
-        questions = generate_questions(args.acquisition_model_name, f"/home/ubuntu/HOTFIXR/data/{args.dataset_name}/valid.parquet", args.size)
+        questions = generate_questions(args.question_generation_model, f"/home/ubuntu/HOTFIXR/data/{args.dataset_name}/valid.parquet", args.size)
     else:
         print(f"=== Step 1: Parsing questions from {args.questions_file} ===")
         questions = pd.read_parquet(args.questions_file, engine='pyarrow')['question']

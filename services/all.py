@@ -2,7 +2,6 @@ import sys
 sys.path.append('/home/ubuntu/HOTFIXR/')
 
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '6,7'
 from typing import List, Dict
 from contextlib import asynccontextmanager
 
@@ -74,7 +73,6 @@ def start_service(req: ActivateRequest):
     global language_model, llm_sampling_params, embedding_model, language_auto_model, language_tokenizer
 
     if "lingualdeficit" in req.service:
-        os.environ['CUDA_VISIBLE_DEVICES'] = '6'
         model_name = req.kwargs.get("model_name")
         language_auto_model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.bfloat16, device_map="auto")
         language_tokenizer = AutoTokenizer.from_pretrained(model_name)

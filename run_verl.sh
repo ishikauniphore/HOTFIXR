@@ -5,12 +5,12 @@ export PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
 
 NUM_GPU=6
 
-MODEL_NAME=$1
+BASE_MODEL=$1
 REWARD_PATH=$2
-JOB_NAME=$3
+TRAINED_GENERATOR_NAME=$3
 DATASET=$4
 SERVICE_NAME=$5
-KWARGS_JSON=$6 
+KWARGS_JSON=$6
 
 curl -X POST http://$localhost:5145/start_service \
     -H "Content-Type: application/json" \
@@ -25,7 +25,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 python3 -m verl.trainer.main_ppo \
     data.max_response_length=1024 \
     data.filter_overlong_prompts=True \
     data.truncation='error' \
-    actor_rollout_ref.model.path=$MODEL_NAME \
+    actor_rollout_ref.model.path=$BASE_MODEL \
     actor_rollout_ref.model.use_remove_padding=True \
     actor_rollout_ref.model.enable_gradient_checkpointing=True \
     actor_rollout_ref.actor.optim.lr=1e-6 \
@@ -48,13 +48,13 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 python3 -m verl.trainer.main_ppo \
     trainer.logger='["console","wandb"]' \
     trainer.critic_warmup=0 \
     trainer.project_name="acquisition_synthesis" \
-    trainer.experiment_name=$JOB_NAME \
+    trainer.experiment_name=$TRAINED_GENERATOR_NAME \
     trainer.n_gpus_per_node=$NUM_GPU \
     trainer.nnodes=1 \
     trainer.save_freq=20 \
     trainer.test_freq=-1 \
     trainer.total_epochs=1 \
-    trainer.default_local_dir=/dev/shm/grpo_synthesis_models/$JOB_NAME \
+    trainer.default_local_dir=/dev/shm/grpo_synthesis_models/$TRAINED_GENERATOR_NAME \
     trainer.max_actor_ckpt_to_keep=1 \
     trainer.val_before_train=False \
     custom_reward_function.path=$REWARD_PATH \
@@ -65,5 +65,5 @@ ray stop --force
 # curl -X POST http://$localhost:5145/end_service \
 #     -H "Content-Type: application/json"
 
-source run_upload_model.sh $JOB_NAME
+source run_upload_model.sh $TRAINED_GENERATOR_NAME
 

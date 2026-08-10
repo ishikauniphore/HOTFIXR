@@ -38,8 +38,9 @@ def set_variables(variables):
         os.environ[f"HOTFIXR_{key}"] = value
 
 
-def train_generator(dataset_path, model, *, reward="lingualdeficit", job_name=None,
-                     num_gpu=6, cuda_visible_devices="0,1,2,3,4,5", push=True,
+def train_generator(dataset_path, base_model, *, reward="lingualdeficit", trained_generator_name=None,
+                     num_gpu=6, generator_cuda_visible_devices="0,1,2,3,4,5",
+                     service_cuda_visible_devices=None, push=True,
                      stop_service=True, dry_run=False, **grpo_overrides):
     """GRPO-train an acquisition/generator model with verl, merge the FSDP
     checkpoint, and (by default) push it to the Hub. Mirrors run_verl.sh +
@@ -50,29 +51,35 @@ def train_generator(dataset_path, model, *, reward="lingualdeficit", job_name=No
     (equivalent of `source run_services.sh`), and by default shuts it down
     again once training finishes (`stop_service=False` to leave it up for a
     follow-up train_generator() call).
+
+    `cuda_visible_devices` is for the verl training process; `service_cuda_visible_devices`
+    is for the reward service (services/all.py) and must name disjoint GPUs
+    from `cuda_visible_devices` since both run concurrently. Defaults to
+    services/all.py's own default ("6,7") if left unset.
     """
     dataset_name = os.path.basename(str(dataset_path).rstrip("/"))
-    if job_name is None:
-        job_name = f"generator_{model.split('/')[-1]}_{dataset_name}_{reward}"
+    if trained_generator_name is None:
+        trained_generator_name = f"generator_{base_model.split('/')[-1]}_{dataset_name}_{reward}"
 
     localhost = "localhost"
-    ckpt_root = Path(f"/dev/shm/grpo_synthesis_models/{job_name}")
+    ckpt_root = Path(f"/dev/shm/grpo_synthesis_models/{trained_generator_name}")
 
     if dry_run:
         print(f"[dry_run] would rm -rf {ckpt_root}")
     else:
         shutil.rmtree(ckpt_root, ignore_errors=True)
 
-    ensure_reward_service_running(dry_run=dry_run)
+    ensure_reward_service_running(dry_run=dry_run,
+                                   cuda_visible_devices=service_cuda_visible_devices)
 
     if dry_run:
         print(f"[dry_run] would POST http://{localhost}:5145/start_service "
-              f"service={reward!r} kwargs={{'model_name': {model!r}}}")
+              f"service={reward!r} kwargs={{'model_name': {base_model!r}}}")
     else:
         import requests
         resp = requests.post(
             f"http://{localhost}:5145/start_service",
-            json={"service": reward, "kwargs": {"model_name": model}},
+            json={"service": reward, "kwargs": {"model_name": base_model}},
         )
         resp.raise_for_status()
 
@@ -80,9 +87,9 @@ def train_generator(dataset_path, model, *, reward="lingualdeficit", job_name=No
     overrides.update({
         "data.train_files": f"{REPO_ROOT}/data/{dataset_name}/train.parquet",
         "data.val_files": f"{REPO_ROOT}/data/{dataset_name}/test.parquet",
-        "actor_rollout_ref.model.path": model,
+        "actor_rollout_ref.model.path": base_model,
         "custom_reward_function.path": f"{REPO_ROOT}/rewards/{reward}.py",
-        "trainer.experiment_name": job_name,
+        "trainer.experiment_name": trained_generator_name,
         "trainer.n_gpus_per_node": num_gpu,
         "trainer.nnodes": 1,
         "trainer.default_local_dir": str(ckpt_root),
@@ -91,7 +98,7 @@ def train_generator(dataset_path, model, *, reward="lingualdeficit", job_name=No
 
     cmd = ["python3", "-m", "verl.trainer.main_ppo"] + [f"{k}={v}" for k, v in overrides.items()]
     run(cmd, cwd=REPO_ROOT, dry_run=dry_run, env={
-        "CUDA_VISIBLE_DEVICES": cuda_visible_devices,
+        "CUDA_VISIBLE_DEVICES": generator_cuda_visible_devices,
         "VLLM_WORKER_MULTIPROC_METHOD": "spawn",
         "PYTORCH_CUDA_ALLOC_CONF": "max_split_size_mb:128",
     })
@@ -107,7 +114,7 @@ def train_generator(dataset_path, model, *, reward="lingualdeficit", job_name=No
         if stop_service:
             stop_reward_service(dry_run=dry_run)
         if push:
-            repo_id = f"{hf_username or '<HF_USERNAME>'}/{job_name}"
+            repo_id = f"{hf_username or '<HF_USERNAME>'}/{trained_generator_name}"
             print(f"[dry_run] would push merged model to {repo_id}")
             return repo_id
         return str(merged_dir)
@@ -128,7 +135,7 @@ def train_generator(dataset_path, model, *, reward="lingualdeficit", job_name=No
 
     hf_username = require_env("HF_USERNAME")
     hf_token = os.environ.get("HF_TOKEN")
-    repo_id = f"{hf_username}/{job_name}"
+    repo_id = f"{hf_username}/{trained_generator_name}"
 
     gen_model = AutoModelForCausalLM.from_pretrained(str(merged_dir))
     gen_tokenizer = AutoTokenizer.from_pretrained(str(merged_dir))
@@ -137,7 +144,7 @@ def train_generator(dataset_path, model, *, reward="lingualdeficit", job_name=No
     return repo_id
 
 
-def generate_data(dataset_path, model, size, *, answer_model="Qwen/Qwen2.5-32B-Instruct",
+def generate_data(dataset_path, question_generation_model, size, *, answer_model="Qwen/Qwen2.5-32B-Instruct",
                    k=4, output_file=None, cuda_visible_devices="0,1,2,3",
                    dry_run=False, **kwargs):
     """Generate synthetic question/answer/reasoning triples with vLLM.
@@ -148,12 +155,12 @@ def generate_data(dataset_path, model, size, *, answer_model="Qwen/Qwen2.5-32B-I
 
     if output_file is None:
         output_file = str(REPO_ROOT / "training_data" /
-                           f"{model.split('/')[-1]}_{dataset_name}_{size}.parquet")
+                           f"{question_generation_model.split('/')[-1]}_{dataset_name}_{size}.parquet")
 
     cmd = [
         "python", str(REPO_ROOT / "generating_data" / "data_gen_cluster.py"),
         "--dataset_name", dataset_name,
-        "--acquisition_model_name", model,
+        "--question_generation_model", question_generation_model,
         "--answer_model_name", answer_model,
         "--size", str(size),
         "--k", str(k),
@@ -169,23 +176,23 @@ def generate_data(dataset_path, model, size, *, answer_model="Qwen/Qwen2.5-32B-I
     return output_file
 
 
-def train_student(model_path, data, *, num_gpus=4, cuda_visible_devices="0,1,2,3",
-                   num_epochs=3, run_name=None, push=True, dry_run=False, **sft_overrides):
+def train_student(base_student_model, data_path, *, num_gpus=4, cuda_visible_devices="0,1,2,3",
+                   num_epochs=3, trained_student_name=None, push=True, dry_run=False, **sft_overrides):
     """SFT-train a student model on generator-produced data, then merge the
     LoRA adapter. Wraps evaluation/sft.py (via torchrun) + evaluation/merge.py.
     Returns the pushed repo id, or the local merged path if push=False.
     """
     evaluation_dir = REPO_ROOT / "evaluation"
     sft_output_root = "/dev/shm/sft_models/"
-    run_name_resolved = run_name or ("student_" + Path(str(data)).name.split(".")[0])
+    run_name_resolved = trained_student_name or ("student_" + Path(str(data_path)).name.split(".")[0])
 
     sft_cmd = [
         "torchrun", f"--nproc_per_node={num_gpus}", "sft.py",
-        "--model_name", model_path,
-        "--file_name", str(data),
+        "--base_student_model", base_student_model,
+        "--data_path", str(data_path),
         "--output_dir", sft_output_root,
         "--num_epochs", str(num_epochs),
-        "--student_name", run_name_resolved,
+        "--trained_student_name", run_name_resolved,
     ]
     for key, val in sft_overrides.items():
         sft_cmd += [f"--{key}", str(val)]
@@ -195,7 +202,7 @@ def train_student(model_path, data, *, num_gpus=4, cuda_visible_devices="0,1,2,3
 
     sft_output_dir = str(Path(sft_output_root) / run_name_resolved)
 
-    merge_cmd = ["python", "merge.py", "--model_path", sft_output_dir, "--base_model", model_path]
+    merge_cmd = ["python", "merge.py", "--model_path", sft_output_dir, "--base_student_model", base_student_model]
     if not push:
         merge_cmd.append("--skip_push")
     run(merge_cmd, cwd=evaluation_dir, dry_run=dry_run)

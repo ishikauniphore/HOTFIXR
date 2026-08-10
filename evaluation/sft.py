@@ -36,25 +36,25 @@ def format_prompt(example, tokenizer, prompt_template):
     return {"text": tokenizer.apply_chat_template(messages, tokenize=False)}
 
 
-def sft_train(file_name, model_name, num_epochs=5, output_dir="/dev/shm/sft_models/", student_name=None, n=1000,
+def sft_train(data_path, base_student_model, num_epochs=5, output_dir="/dev/shm/sft_models/", trained_student_name=None, n=1000,
               learning_rate=2e-4, lora_r=16, lora_alpha=32):
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    tokenizer = AutoTokenizer.from_pretrained(base_student_model)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    df = pd.read_parquet(file_name)[:n]
+    df = pd.read_parquet(data_path)[:n]
     assert "question" in df.columns and "answer" in df.columns and "reasoning" in df.columns, \
         "CSV must have 'question' and 'answer' columns"
     assert len(df) == n, f"CSV must have at least {n} rows, but only has {len(df)} rows"
 
-    prompt_template = get_prompt_template(file_name)
+    prompt_template = get_prompt_template(data_path)
     dataset = Dataset.from_pandas(df[["question", "answer", "reasoning"]].dropna())
     dataset = dataset.map(lambda ex: format_prompt(ex, tokenizer, prompt_template))
 
-    if student_name is None:
-        run_name = file_name.split('/')[-1].split('.')[0]
-    else: 
-        run_name = student_name
+    if trained_student_name is None:
+        run_name = data_path.split('/')[-1].split('.')[0]
+    else:
+        run_name = trained_student_name
     save_path = os.path.join(output_dir, run_name)
     os.makedirs(save_path, exist_ok=True)
 
@@ -82,7 +82,7 @@ def sft_train(file_name, model_name, num_epochs=5, output_dir="/dev/shm/sft_mode
         bnb_4bit_compute_dtype=torch.bfloat16,
     )
     model = AutoModelForCausalLM.from_pretrained(
-        model_name,
+        base_student_model,
         quantization_config=bnb_config,
         device_map={"": PartialState().process_index},
     )
@@ -121,16 +121,16 @@ def sft_train(file_name, model_name, num_epochs=5, output_dir="/dev/shm/sft_mode
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--file_name", help="Path to CSV file with 'question' and 'answer' columns", default="/home/ubuntu/HOTFIXR/generating_data/ins_train/random_OpenR1-Math-220k_1000.parquet")
-    parser.add_argument("--model_name",  default="Qwen/Qwen2.5-3b-Instruct")
+    parser.add_argument("--data_path", help="Path to CSV file with 'question' and 'answer' columns", default="/home/ubuntu/HOTFIXR/generating_data/ins_train/random_OpenR1-Math-220k_1000.parquet")
+    parser.add_argument("--base_student_model",  default="Qwen/Qwen2.5-3b-Instruct")
     parser.add_argument("--output_dir", default="/dev/shm/sft_models/", help="Directory to save trained model")
     parser.add_argument("--num_epochs", type=int, default=3)
-    parser.add_argument("--student_name", type=str, default=None)
+    parser.add_argument("--trained_student_name", type=str, default=None)
     parser.add_argument("--num_data", type=int, default=1000)
     parser.add_argument("--learning_rate", type=float, default=2e-4)
     parser.add_argument("--lora_r", type=int, default=16)
     parser.add_argument("--lora_alpha", type=int, default=32)
     args = parser.parse_args()
 
-    model_path = sft_train(args.file_name, args.model_name, args.num_epochs, args.output_dir, args.student_name, args.num_data,
+    model_path = sft_train(args.data_path, args.base_student_model, args.num_epochs, args.output_dir, args.trained_student_name, args.num_data,
                             args.learning_rate, args.lora_r, args.lora_alpha)

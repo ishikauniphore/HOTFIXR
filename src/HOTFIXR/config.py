@@ -1,9 +1,6 @@
 import os
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-
-
 def require_env(name):
     val = os.environ.get(name)
     if not val:
@@ -13,6 +10,7 @@ def require_env(name):
         )
     return val
 
+REPO_ROOT = Path(__file__).resolve().parents[2]
 
 # Mirrors the hardcoded Hydra overrides in run_verl.sh. Keys that vary per
 # call (train_files, model.path, reward path, job/trainer naming, GPU count)
