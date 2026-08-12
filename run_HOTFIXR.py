@@ -12,7 +12,7 @@ HOTFIXR.set_variables({
 
 generator_model = HOTFIXR.train_generator(
     dataset_path="/home/ubuntu/HOTFIXR/data/nemotron",
-    base_model="Qwen/Qwen2.5-7B-Instruct",
+    base_generator_model="Qwen/Qwen2.5-7B-Instruct",
     trained_generator_name="generator_nemotron_qwen7b_round0",
     num_gpu=4,
     cuda_visible_devices="0,1,2,3",

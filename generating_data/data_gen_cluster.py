@@ -294,8 +294,6 @@ def main():
     else:
         print(f"=== Step 1: Parsing questions from {args.questions_file} ===")
         questions = pd.read_parquet(args.questions_file, engine='pyarrow')['question']
-    
-    pd.DataFrame({"question": questions}).to_parquet('training_data/questions.parquet', engine='pyarrow')
 
     print("=== Step 2: Generating answers ===")
     answers, reasonings = generate_answers(

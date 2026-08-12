@@ -38,7 +38,7 @@ def set_variables(variables):
         os.environ[f"HOTFIXR_{key}"] = value
 
 
-def train_generator(dataset_path, base_model, *, reward="lingualdeficit", trained_generator_name=None,
+def train_generator(dataset_path, base_generator_model, base_student_model=None, *, reward="lingualdeficit", trained_generator_name=None,
                      num_gpu=6, generator_cuda_visible_devices="0,1,2,3,4,5",
                      service_cuda_visible_devices=None, push=True,
                      stop_service=True, dry_run=False, **grpo_overrides):
@@ -57,9 +57,11 @@ def train_generator(dataset_path, base_model, *, reward="lingualdeficit", traine
     from `cuda_visible_devices` since both run concurrently. Defaults to
     services/all.py's own default ("6,7") if left unset.
     """
+    if base_student_model is None:
+        base_student_model = base_generator_model
     dataset_name = os.path.basename(str(dataset_path).rstrip("/"))
     if trained_generator_name is None:
-        trained_generator_name = f"generator_{base_model.split('/')[-1]}_{dataset_name}_{reward}"
+        trained_generator_name = f"generator_{base_generator_model.split('/')[-1]}_{dataset_name}_{reward}"
 
     localhost = "localhost"
     ckpt_root = Path(f"/dev/shm/grpo_synthesis_models/{trained_generator_name}")
@@ -74,12 +76,12 @@ def train_generator(dataset_path, base_model, *, reward="lingualdeficit", traine
 
     if dry_run:
         print(f"[dry_run] would POST http://{localhost}:5145/start_service "
-              f"service={reward!r} kwargs={{'model_name': {base_model!r}}}")
+              f"service={reward!r} kwargs={{'model_name': {base_student_model!r}}}")
     else:
         import requests
         resp = requests.post(
             f"http://{localhost}:5145/start_service",
-            json={"service": reward, "kwargs": {"model_name": base_model}},
+            json={"service": reward, "kwargs": {"model_name": base_student_model}},
         )
         resp.raise_for_status()
 
@@ -87,7 +89,7 @@ def train_generator(dataset_path, base_model, *, reward="lingualdeficit", traine
     overrides.update({
         "data.train_files": f"{REPO_ROOT}/data/{dataset_name}/train.parquet",
         "data.val_files": f"{REPO_ROOT}/data/{dataset_name}/test.parquet",
-        "actor_rollout_ref.model.path": base_model,
+        "actor_rollout_ref.model.path": base_generator_model,
         "custom_reward_function.path": f"{REPO_ROOT}/rewards/{reward}.py",
         "trainer.experiment_name": trained_generator_name,
         "trainer.n_gpus_per_node": num_gpu,
