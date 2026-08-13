@@ -12,7 +12,7 @@ DATASET=$4
 SERVICE_NAME=$5
 KWARGS_JSON=$6
 
-curl -X POST http://$localhost:5145/start_service \
+curl -X POST http://localhost:5145/start_service \
     -H "Content-Type: application/json" \
     -d "{\"service\": \"$SERVICE_NAME\", \"kwargs\": $KWARGS_JSON}"
 
