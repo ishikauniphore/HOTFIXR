@@ -35,3 +35,9 @@ Next, put this command at the end of your bash scripts:
 ```
 notify "experiment finished"
 ```
+
+# To test the reward function:
+
+Run `source run_services.sh` to activate the reward function API.
+
+Use `test_reward.py` to call it and calculate the reward. It could take up to 30 seconds to receive a response, depending on your machine and package versions (the better the machine and more recent the packages, the faster response you'll get).
